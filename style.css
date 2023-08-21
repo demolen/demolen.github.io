@@ -4,9 +4,9 @@ body, html {
     padding: 0;
     background-color: #f1f0e0;
     width: 100%;
-    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
+    overflow: hidden;
 }
 .services {
     color: #161615;
