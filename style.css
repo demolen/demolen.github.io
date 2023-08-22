@@ -324,12 +324,13 @@ body, html {
     }
 
     .square {
-        width: 9%;
-        height: 17.7%;
-        top: 11%;
-        left: 89.3%;
-        transform: rotate(136deg) perspective(100px) rotateX(0deg) rotateY(45deg) rotateZ(50deg);
-    }
+        .square {
+            width: 3%;
+            height: 14.7%;
+            top: 7%;
+            left: 74.3%;
+            transform: rotate(139deg) perspective(170px) rotateX(0deg) rotateY(45deg) rotateZ(50deg);
+        }
 
     .services {
         left: 11%;
