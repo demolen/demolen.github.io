@@ -64,8 +64,8 @@ body, html {
 @media (orientation: portrait) {
     .square {
         width: 14%;
-        height: 32.71%;
-        top: -12%;
+        height: 19.7%;
+        top: -5%;
         left: 91.29%;
         transform: rotate(156deg) perspective(100px) rotateX(0deg) rotateY(45deg) rotateZ(50deg);
     }
@@ -127,4 +127,42 @@ body, html {
         left: 13.29%;
         transform: rotate(287deg) rotateX(0deg) rotateY(-45deg) rotateZ(30deg);
     }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape) {
+    #rect {
+        transform: perspective(14em) rotateX(76deg) rotateY(339deg) rotateZ(78deg);
+    }
+    .square2 {
+        width: 126%;
+    }
+}
+@media only screen and (min-width: 844px) and (orientation: landscape) {
+    #rect {
+        transform: perspective(14em) rotateX(76deg) rotateY(339deg) rotateZ(78deg);
+    }
+    .square2 {
+        width: 125%;
+    }
+    .services {
+        left: 39%;
+        top: 1%;
+    }
+}
+@media only screen and (min-width: 883px) and (orientation: landscape) {
+
+    .square2 {
+        width: 124%;
+        height: 2.71%;
+        top: 54%;
+        left: 13.29%;
+        transform: rotate(288deg) rotateX(0deg) rotateY(-45deg) rotateZ(30deg);
+    }}
+@media only screen and (min-width: 915px) and (orientation: landscape) {
+.square2 {
+    width: 124%;
+    height: 2.71%;
+    top: 54%;
+    left: 13.29%;
+    transform: rotate(288deg) rotateX(0deg) rotateY(-45deg) rotateZ(30deg);
+}
 }
