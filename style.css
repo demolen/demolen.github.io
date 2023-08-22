@@ -107,13 +107,15 @@ body, html {
 @media only screen and (min-width: 390px) and (orientation: landscape) {
     .services {
         left: 40%;
+        margin-left: 13vw;
     }
 }
 
 @media only screen and (min-width: 414px) and (orientation: landscape) {
-    .services {
-        left: 41%;
-    }
+{
+    left: 41%;
+    margin-left: 12vw;
+}
 }
 @media only screen and (min-width: 732px) and (orientation: landscape) {
     #rect {
@@ -125,6 +127,7 @@ body, html {
     }
     .services {
         left: 43%;
+        margin-left: 9vw;
     }
 }
 
@@ -138,6 +141,10 @@ body, html {
         top: 52%;
         left: 13.29%;
         transform: rotate(287deg) rotateX(0deg) rotateY(-45deg) rotateZ(30deg);
+    }
+    .services {
+        left: 43%;
+        margin-left: 8vw;
     }
 
 }
@@ -159,6 +166,7 @@ body, html {
     .services {
         left: 39%;
         top: 1%;
+        margin-left: 8vw;
     }
 }
 @media only screen and (min-width: 883px) and (orientation: landscape) {
@@ -169,6 +177,7 @@ body, html {
         top: 54%;
         left: 13.29%;
         transform: rotate(288deg) rotateX(0deg) rotateY(-45deg) rotateZ(30deg);
+        margin-left: 7vw;
     }}
 @media only screen and (min-width: 915px) and (orientation: landscape) {
     .square2 {
@@ -191,12 +200,13 @@ body, html {
     .services {
         left: 45%;
         top: 0;
+        margin-left: 0;
     }
 }
 @media only screen and (min-width: 1280px) and (orientation: landscape) {
 
     .services {
-        left: 44%;
+        left: 41%;
         top: 2%;
         font-size: 186%;
     }
