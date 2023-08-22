@@ -217,17 +217,17 @@ body, html {
         transform: rotate(110deg) perspective(500px) rotateX(-1deg) rotateY(-55deg) rotateZ(20deg);
     }
     .square {
-        width: 15%;
-        height: 13.7%;
-        top: 5%;
-        left: 77.3%;
+        width: 3%;
+        height: 14.7%;
+        top: 8%;
+        left: 82.3%;
         transform: rotate(136deg) perspective(100px) rotateX(0deg) rotateY(45deg) rotateZ(50deg);
     }
 
     .services {
         left: 8%;
         top: 4%;
-        font-size: 97%;
+        font-size: 90%;
     }
 
     #rect {
