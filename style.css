@@ -364,12 +364,28 @@ body, html {
         transform: perspective(60px) rotateX(-5deg) rotateY(-25deg) rotateZ(0deg);
     }}
 @media only screen and (min-height: 1080px) and (orientation: portrait) {
+    .square2 {
+        width: 75%;
+        height: 12.7%;
+        top: 21%;
+        left: 24.3%;
+        transform: rotate(110deg) perspective(500px) rotateX(-1deg) rotateY(-55deg) rotateZ(20deg);
+    }
+
     #rect {
-        width: 7%;
-        height: 11%;
-        left: 70%;
+        width: 2%;
+        height: 13%;
+        left: 76%;
         top: 3%;
         transform: perspective(80px) rotateX(618deg) rotateY(1deg) rotateZ(30deg);
+    }
+
+    .square {
+        width: 3%;
+        height: 14.7%;
+        top: 7%;
+        left: 74.3%;
+        transform: rotate(139deg) perspective(170px) rotateX(0deg) rotateY(45deg) rotateZ(50deg);
     }
 }
 @media only screen and (min-height: 1280px) and (orientation: portrait) {
