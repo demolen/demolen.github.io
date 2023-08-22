@@ -291,11 +291,11 @@ body, html {
 }
 @media only screen and (min-height: 800px) and (orientation: portrait) {
     .square {
-        width: 18%;
-        height: 7.7%;
-        top: 15%;
-        left: 80.3%;
-        transform: rotate(136deg) perspective(100px) rotateX(0deg) rotateY(45deg) rotateZ(50deg);
+        width: 3%;
+        height: 14.7%;
+        top: 7%;
+        left: 74.3%;
+        transform: rotate(139deg) perspective(170px) rotateX(0deg) rotateY(45deg) rotateZ(50deg);
     }
     .services {
         left: 8%;
