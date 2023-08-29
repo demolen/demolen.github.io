@@ -36,7 +36,7 @@ body, html {
         color: #161615;
         position: absolute;
         text-align: left;
-        font-size: 90%;
+        font-size: 100%;
         left: 39%;
         top: 1%;
         padding: 1% 11vh 2%;
@@ -89,7 +89,7 @@ body, html {
     .services {
         left: 8%;
         top: 4%;
-        font-size: 90%;
+        font-size: 100%;
     }
     #rect {
         width: 15.3%;
