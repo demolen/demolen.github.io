@@ -24,6 +24,14 @@ body, html {
     background-color: #161615;
     position: absolute;
 }
+ .material-symbols-outlined {
+     font-variation-settings:
+             'FILL' 0,
+             'wght' 400,
+             'GRAD' 0,
+             'opsz' 24
+ }
+
 
 #rect {
     background: #ae2005;
@@ -39,10 +47,6 @@ body, html {
     text-align: left;
     padding: 10px 0 10px 5%;
     clip-path: polygon(0px -59px, 78.81% 52.71%, 100% 20%, 100% 100%, 0% 100%);
-}
-
-.placeholder {
-    font-style: italic;
 }
 .footerElements{
     padding-top: 4%;
