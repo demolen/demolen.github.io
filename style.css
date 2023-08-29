@@ -75,14 +75,14 @@ body, html {
     .square2 {
         width: 96%;
         height: 12.7%;
-        top: 32%;
+        top: 35%;
         left: 14.3%;
         transform: rotate(110deg) perspective(500px) rotateX(-1deg) rotateY(-55deg) rotateZ(20deg);
     }
     .square {
         width: 3%;
         height: 14.7%;
-        top: 11%;
+        top: 13%;
         left: 82.3%;
         transform: rotate(136deg) perspective(100px) rotateX(0deg) rotateY(45deg) rotateZ(50deg);
     }
@@ -95,7 +95,7 @@ body, html {
         width: 15.3%;
         height: 16.8%;
         left: 38.3%;
-        top: 25%;
+        top: 28%;
         transform: perspective(60px) rotateX(-5deg) rotateY(-25deg) rotateZ(0deg);
     }
 }
