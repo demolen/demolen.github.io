@@ -34,11 +34,12 @@ body, html {
 
 
 #rect {
-    background: #ae2005;
+    background: #ae3015;
     position: absolute;
+    box-shadow: 0 1.3vw 28px #400000;
 }
 .footer {
-    background-color: #161615;
+    background-color: #ae3015;
     color: #fef1e0df;
     position: absolute;
     bottom: 0;
