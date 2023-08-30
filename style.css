@@ -15,13 +15,13 @@ body, html {
 }
 
 .square {
-    background-color: #161615;
+    background-color: #16161505;
     position: absolute;
     z-index: 3;
 }
 
 .square2 {
-    background-color: #161615;
+    background-color: #8ad5e6;
     position: absolute;
     z-index: 0;
 }
@@ -35,13 +35,13 @@ body, html {
 
 
 #rect {
-    background: #161615;
+    background: #3e3e3e24;
     position: absolute;
     box-shadow: 0 1.3vw 28px #2a2626;
 }
 .footer {
-    background-color: #161615;
-    color: #e1e1e1;
+    background-color: #16161529;
+    color: #000000;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -76,7 +76,7 @@ body, html {
         left: 19.29%;
         transform-style: flat;
         transform: rotate(231deg) perspective(791px) rotateX(295deg) rotateY(49deg) rotateZ(297deg);
-        box-shadow: -1px -20px 0px 20px #ffffff;
+        box-shadow: 20px -13px 20px 0px #757575;
     }
 
 
@@ -87,15 +87,17 @@ body, html {
         top: 49%;
         transform-style: flat;
         transform: perspective(14em) rotateX(76deg) rotateY(339deg) rotateZ(78deg);
+        visibility: hidden;
     }
 
     .square2 {
-        width: 124%;
-        height: 2.71%;
-        top: 54%;
-        left: 13.29%;
-        transform: rotate(288deg) rotateX(0deg) rotateY(-45deg) rotateZ(30deg);
-        margin-left: 7vw;
+        width: 24%;
+        height: 41%;
+        top: 24%;
+        left: -6.71%;
+        transform: rotate(304deg) rotateX(335deg) rotateY(5deg) rotateZ(160grad);
+        margin-left: 56vw;
+        clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
     }
 }
 
