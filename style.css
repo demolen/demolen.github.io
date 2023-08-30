@@ -1,12 +1,20 @@
+@font-face {
+    font-family: 'Didact Gothic Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Didact Gothic Regular'), url('Assets/DidactGothic-Regular.woff') format('woff');
+}
+
 body, html {
     margin: 0;
     padding: 0;
     background-color: #d6d6d6ba;
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Didact Gothic Regular', sans-serif;
     font-weight: normal;
     overflow: hidden;
 }
+
 
 .services {
     color: #161615;
@@ -21,7 +29,12 @@ body, html {
 }
 
 .square2 {
-    background-color: #8ad5e6;
+    background-color: #ffd2fa;
+    position: absolute;
+    z-index: 0;
+}
+.square3 {
+    background-color: chartreuse;
     position: absolute;
     z-index: 0;
 }
@@ -35,7 +48,7 @@ body, html {
 
 
 #rect {
-    background: #3e3e3e24;
+    background-color: chartreuse;
     position: absolute;
     box-shadow: 0 1.3vw 28px #2a2626;
 }
@@ -58,6 +71,15 @@ body, html {
 
 /* Styles specific to landscape orientation */
 @media (orientation: landscape) {
+    .square3 {
+        width: 24%;
+        height: 41%;
+        top: 12%;
+        left: -4.71%;
+        transform: rotate(304deg) rotateX(335deg) rotateY(5deg) rotateZ(160grad);
+        margin-left: 56vw;
+        clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
+    }
     .services {
         color: #161615;
         position: absolute;
@@ -132,7 +154,8 @@ body, html {
         top: 28%;
         transform: perspective(60px) rotateX(-5deg) rotateY(-25deg) rotateZ(0deg);
         transform-style: flat;
-        background-color: black;
+        background-color: chartreuse;
+        box-shadow: 8px 0.3vw 25px chartreuse;
 
     }
 
