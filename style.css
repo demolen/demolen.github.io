@@ -23,7 +23,7 @@ body, html {
 }
 
 .square {
-    background-color: #16161505;
+    background: linear-gradient(269deg, rgba(36,15,0,1) 0%, rgba(119,84,181,1) 34%, rgba(233,120,113,1) 100%);
     position: absolute;
     z-index: 3;
 }
@@ -97,9 +97,7 @@ body, html {
         top: 0;
         left: 19.29%;
         transform-style: flat;
-        transform: rotate(231deg) perspective(791px) rotateX(295deg) rotateY(49deg) rotateZ(297deg);
-        box-shadow: 20px -13px 20px 0px #757575;
-    }
+        transform: rotate(231deg) perspective(791px) rotateX(295deg) rotateY(49deg) rotateZ(297deg);}
 
 
     #rect {
