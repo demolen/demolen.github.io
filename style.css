@@ -75,7 +75,7 @@ body, html {
         width: 24%;
         height: 41%;
         top: 12%;
-        left: -4.71%;
+        left: 3.29%;
         transform: rotate(304deg) rotateX(335deg) rotateY(5deg) rotateZ(160grad);
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
@@ -95,9 +95,10 @@ body, html {
         width: 31%;
         height: 60.71%;
         top: 0;
-        left: 19.29%;
+        left: 27.29%;
         transform-style: flat;
-        transform: rotate(231deg) perspective(791px) rotateX(295deg) rotateY(49deg) rotateZ(297deg);}
+        transform: rotate(231deg) perspective(791px) rotateX(295deg) rotateY(49deg) rotateZ(297deg);
+    }
 
 
     #rect {
@@ -114,7 +115,7 @@ body, html {
         width: 24%;
         height: 41%;
         top: 24%;
-        left: -6.71%;
+        left: 1.29%;
         transform: rotate(304deg) rotateX(335deg) rotateY(5deg) rotateZ(160grad);
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
