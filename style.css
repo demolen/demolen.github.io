@@ -4,7 +4,11 @@
     font-weight: normal;
     src: local('Didact Gothic Regular'), url('Assets/DidactGothic-Regular.woff') format('woff');
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body, html {
     margin: 0;
     padding: 0;
