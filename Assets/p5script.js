@@ -6,20 +6,16 @@ let startTime;
 let stopDrawing = false;
 
 function setup() {
-    frameRate(30)
+    frameRate(30);
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent('canvas-container');
     background(255);
-    x = width / 2;
-    y = height / 2;
-    prevX = x;
-    prevY = y;
+    // Initialize line to start on a random edge of the canvas
+    initializeLineOnRandomEdge();
     startTime = millis();
-    windowResized();  // manually trigger a resize once setup is complete
 }
 
 function draw() {
-    // Check if more than 10 seconds have passed
     if (!stopDrawing || (millis() - startTime) < 10000) {
         let angle = noise(xoff) * TWO_PI * 4;
         let len = 5;
@@ -43,35 +39,39 @@ function draw() {
 
     // If it exits the screen, pick a random edge to re-enter
     if (x > width || x < 0 || y > height || y < 0) {
-        let edge = int(random(4));
-
-        switch(edge) {
-            case 0:  // top edge
-                x = random(width);
-                y = 0;
-                break;
-            case 1:  // bottom edge
-                x = random(width);
-                y = height;
-                break;
-            case 2:  // left edge
-                x = 0;
-                y = random(height);
-                break;
-            case 3:  // right edge
-                x = width;
-                y = random(height);
-                break;
-        }
-
-        prevX = x;
-        prevY = y;
+        initializeLineOnRandomEdge();
 
         // Stop drawing if 10 seconds or more have passed
         if ((millis() - startTime) >= 20000) {
             stopDrawing = true;
         }
     }
+}
+
+function initializeLineOnRandomEdge() {
+    let edge = int(random(4));
+
+    switch (edge) {
+        case 0:  // top edge
+            x = random(width);
+            y = 0;
+            break;
+        case 1:  // bottom edge
+            x = random(width);
+            y = height;
+            break;
+        case 2:  // left edge
+            x = 0;
+            y = random(height);
+            break;
+        case 3:  // right edge
+            x = width;
+            y = random(height);
+            break;
+    }
+
+    prevX = x;
+    prevY = y;
 }
 
 function windowResized() {

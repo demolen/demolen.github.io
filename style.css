@@ -138,18 +138,16 @@ a:link {
         width: 96%;
         height: 12.7%;
         top: 35%;
-        left: 14.3%;
+        left: 16.3%;
         transform-style: flat;
 
         transform: rotate(110deg) perspective(500px) rotateX(-1deg) rotateY(-55deg) rotateZ(20deg);
+        box-shadow: 12px -3vw 20px 0 #806093;
+        background: linear-gradient(269deg, rgb(36, 15, 0) 0%, rgb(119, 84, 181) 34%, rgba(233, 120, 113, 0.67) 100%);
+
     }
     .square {
-        width: 3%;
-        height: 14.7%;
-        top: 13%;
-        left: 82.3%;
-        transform-style: flat;
-        transform: rotate(136deg) perspective(100px) rotateX(0deg) rotateY(45deg) rotateZ(50deg);
+        visibility: hidden;
     }
     .services {
         left: 8%;
