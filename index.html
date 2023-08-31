@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotated Square</title>
     <link rel="stylesheet" href="style.css">
-
+    <!-- Include p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
 </head>
 <body>
 <div class="services">
@@ -19,6 +20,12 @@
 </div>
 <div class="square2"></div>
 <div class="square3"></div>
+
+<!-- Container for p5.js canvas -->
+<div id="canvas-container">
+    <!-- p5.js will attach canvas here -->
+</div>
+
 <div id="rect"></div>
 <div class="footer">
     <div class="footerElements">
@@ -26,5 +33,60 @@
         <p><span class="placeholder">+49 (157) 8921-6714</span></p>
     </div>
 </div>
+
+<!-- p5.js sketch -->
+<script>
+    let xoff = 0;
+    let yoff = 10000;
+    let x, y;
+    let prevX, prevY;
+
+    function setup() {
+        let cnv = createCanvas(windowWidth, windowHeight);
+        cnv.parent('canvas-container');  // Make sure the canvas is where you want it.
+        background(255);
+        x = width / 2;
+        y = height / 2;
+        prevX = x;
+        prevY = y;
+    }
+
+    function draw() {
+        let angle = noise(xoff) * TWO_PI * 4;
+        let len = 5;
+        let newX = x + cos(angle) * len;
+        let newY = y + sin(angle) * len;
+
+        stroke(0);
+        strokeWeight(2);
+
+        let r = random(255);
+        let g = random(255);
+        let b = random(255);
+
+        stroke(r, g, b, 50);
+
+        line(prevX, prevY, newX, newY);
+
+        prevX = newX;
+        prevY = newY;
+
+        x = newX;
+        y = newY;
+
+        xoff += 0.01;
+        yoff += 0.01;
+
+        if (x > width || x < 0 || y > height || y < 0) {
+            x = width / 2;
+            y = height / 2;
+            prevX = x;
+            prevY = y;
+        }
+    }
+    function windowResized() {
+        resizeCanvas(windowWidth, windowHeight);
+    }
+</script>
 </body>
 </html>
