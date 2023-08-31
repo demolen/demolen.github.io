@@ -12,6 +12,7 @@ function setup() {
     y = height / 2;
     prevX = x;
     prevY = y;
+    windowResized();
 }
 
 function draw() {
