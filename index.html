@@ -42,6 +42,7 @@
     let prevX, prevY;
 
     function setup() {
+        frameRate(30)
         let cnv = createCanvas(windowWidth, windowHeight);
         cnv.parent('canvas-container');  // Make sure the canvas is where you want it.
         background(255);
@@ -58,7 +59,7 @@
         let newY = y + sin(angle) * len;
 
         stroke(0);
-        strokeWeight(2);
+        strokeWeight(1);
 
         stroke(0,0,0);
 
