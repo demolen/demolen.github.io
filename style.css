@@ -162,7 +162,7 @@ a:link {
         transform: perspective(60px) rotateX(-5deg) rotateY(-25deg) rotateZ(0deg);
         transform-style: flat;
         background-color: #00ffe75e;
-        box-shadow: 8px 0.3vw 25px chartreuse;
+        box-shadow: 8px 0.3vw 25px #00e7ff;
 
     }
     .footer{
