@@ -78,6 +78,7 @@ body, html {
         transform: rotate(304deg) rotateX(335deg) rotateY(5deg) rotateZ(160grad);
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
+        box-shadow: 10vw 10vw gold;
     }
     .footer{
         font-size: 2vh;
@@ -96,7 +97,7 @@ body, html {
     .square {
         width: 30vw;
         height: 60vh;
-        top: 0;
+        top: 10vh;
         left: 27.29%;
         transform-style: flat;
         transform: rotate(231deg) perspective(791px) rotateX(295deg) rotateY(49deg) rotateZ(297deg);
