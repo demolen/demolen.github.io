@@ -80,11 +80,14 @@ body, html {
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
     }
+    .footer{
+        font-size: 2vh;
+    }
     .services {
         color: #161615;
         position: absolute;
         text-align: left;
-        font-size: 2vw;
+        font-size: 2vh;
         /*! left: 39%; */
         top: 1%;
         padding: 1% 11vh 2%;
