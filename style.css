@@ -14,7 +14,22 @@ body, html {
     font-weight: normal;
     overflow: hidden;
 }
-
+.square::before, .square2::before, .square3::before, #rect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(white, transparent);
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 4;
+}
+.square::before, .square2::before, .square3::before, #rect::before {
+    /* ...existing styles... */
+    background: linear-gradient(to bottom right, transparent calc(var(--mouse-x, 50%) - 55%), white calc(var(--mouse-x, 50%) - -2%), transparent calc(var(--mouse-x, 50%) + 3%));
+}
 .services {
     color: #161615;
     position: absolute;
@@ -75,7 +90,7 @@ body, html {
         height: 41%;
         top: 12%;
         left: 3.29%;
-        transform: rotate(304deg) rotateX(335deg) rotateY(5deg) rotateZ(160grad);
+        transform: rotate(300deg) rotateX(335deg) rotateY(5deg) rotateZ(162grad);
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
         box-shadow: 10vw 10vw gold;
@@ -100,7 +115,7 @@ body, html {
         top: 16vh;
         left: 27.29%;
         transform-style: flat;
-        transform: rotate(231deg) perspective(791px) rotateX(295deg) rotateY(49deg) rotateZ(297deg);
+        transform: rotate(32deg) perspective(791px) rotateX(247deg) rotateY(355deg) rotateZ(332deg);
     }
 
 
@@ -119,7 +134,7 @@ body, html {
         height: 41%;
         top: 24%;
         left: 1.29%;
-        transform: rotate(304deg) rotateX(335deg) rotateY(5deg) rotateZ(160grad);
+        transform: rotate(328deg) rotateX(335deg) rotateY(5deg) rotateZ(160grad);
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
     }
@@ -164,4 +179,3 @@ body, html {
         font-size: 86%
     }
 }
-
