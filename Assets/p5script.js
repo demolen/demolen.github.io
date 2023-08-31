@@ -68,7 +68,7 @@ function draw() {
         prevY = y;
 
         // Stop drawing if 10 seconds or more have passed
-        if ((millis() - startTime) >= 30000) {
+        if ((millis() - startTime) >= 20000) {
             stopDrawing = true;
         }
     }
