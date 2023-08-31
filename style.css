@@ -142,7 +142,7 @@ a:link {
         transform-style: flat;
 
         transform: rotate(110deg) perspective(500px) rotateX(-1deg) rotateY(-55deg) rotateZ(20deg);
-        box-shadow: 12px -3vw 20px 0 #806093;
+        box-shadow: 12px -3vw 20px 0 #806093a6;
         background: linear-gradient(269deg, rgb(36, 15, 0) 0%, rgb(119, 84, 181) 34%, rgba(233, 120, 113, 0.67) 100%);
 
     }
