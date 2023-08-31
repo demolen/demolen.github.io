@@ -15,7 +15,6 @@ body, html {
     overflow: hidden;
 }
 
-
 .services {
     color: #161615;
     position: absolute;
@@ -23,7 +22,7 @@ body, html {
 }
 
 .square {
-    background: linear-gradient(269deg, rgba(36,15,0,1) 0%, rgba(119,84,181,1) 34%, rgba(233,120,113,1) 100%);
+    background: linear-gradient(269deg, rgb(36, 15, 0) 0%, rgb(119, 84, 181) 34%, rgba(233, 120, 113, 0.67) 100%);
     position: absolute;
     z-index: 3;
 }
@@ -34,7 +33,7 @@ body, html {
     z-index: 0;
 }
 .square3 {
-    background-color: chartreuse;
+    background-color: #00ffe75e;
     position: absolute;
     z-index: 0;
 }
@@ -156,13 +155,12 @@ body, html {
         top: 28%;
         transform: perspective(60px) rotateX(-5deg) rotateY(-25deg) rotateZ(0deg);
         transform-style: flat;
-        background-color: chartreuse;
+        background-color: #00ffe75e;
         box-shadow: 8px 0.3vw 25px chartreuse;
 
     }
     .footer{
         font-size: 86%
     }
-
 }
 
