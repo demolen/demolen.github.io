@@ -17,7 +17,11 @@ body, html {
     font-weight: normal;
     overflow: hidden;
 }
-
+a:link {
+    color: #161615;
+    background-color: transparent;
+    text-decoration: none;
+}
 .services {
     color: #161615;
     position: absolute;
@@ -69,7 +73,6 @@ body, html {
 }
 .footerElements {
     padding: 2vh 0 2vh 0;
-    z-index: 3;
 }
 
 /* Styles specific to landscape orientation */
