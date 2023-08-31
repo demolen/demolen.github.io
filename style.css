@@ -84,16 +84,16 @@ body, html {
         color: #161615;
         position: absolute;
         text-align: left;
-        font-size: 100%;
-        /* left: 39%; */
+        font-size: 2vw;
+        /*! left: 39%; */
         top: 1%;
         padding: 1% 11vh 2%;
         max-width: 24%;
     }
 
     .square {
-        width: 31%;
-        height: 60.71%;
+        width: 30vw;
+        height: 60vh;
         top: 0;
         left: 27.29%;
         transform-style: flat;
@@ -144,7 +144,7 @@ body, html {
     .services {
         left: 8%;
         top: 4%;
-        font-size: 100%;
+        font-size: 86%;
     }
     #rect {
         width: 15.3%;
@@ -156,6 +156,9 @@ body, html {
         background-color: chartreuse;
         box-shadow: 8px 0.3vw 25px chartreuse;
 
+    }
+    .footer{
+        font-size: 86%
     }
 
 }
