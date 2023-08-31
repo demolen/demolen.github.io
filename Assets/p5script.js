@@ -16,7 +16,7 @@ function setup() {
     initializeLineOnRandomEdge();
     setDisplayProperties();
     startTime = millis();
-    resizeCanvas(windowWidth, windowHeight);
+    windowResized();
 }
 
 function draw() {
