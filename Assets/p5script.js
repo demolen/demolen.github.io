@@ -4,6 +4,8 @@ let x, y;
 let prevX, prevY;
 let startTime;
 let stopDrawing = false;
+let stopTime;
+let strokeWidth;
 
 function setup() {
     frameRate(30);
@@ -12,18 +14,19 @@ function setup() {
     background(255);
     // Initialize line to start on a random edge of the canvas
     initializeLineOnRandomEdge();
+    setDisplayProperties();
     startTime = millis();
 }
 
 function draw() {
-    if (!stopDrawing || (millis() - startTime) < 10000) {
+    if (!stopDrawing || (millis() - startTime) < stopTime) {
         let angle = noise(xoff) * TWO_PI * 4;
         let len = 5;
         let newX = x + cos(angle) * len;
         let newY = y + sin(angle) * len;
 
         stroke(0);
-        strokeWeight(1);
+        strokeWeight(strokeWidth);
 
         line(prevX, prevY, newX, newY);
 
@@ -41,8 +44,8 @@ function draw() {
     if (x > width || x < 0 || y > height || y < 0) {
         initializeLineOnRandomEdge();
 
-        // Stop drawing if 10 seconds or more have passed
-        if ((millis() - startTime) >= 20000) {
+        // Stop drawing if the stopTime has passed
+        if ((millis() - startTime) >= stopTime) {
             stopDrawing = true;
         }
     }
@@ -74,6 +77,19 @@ function initializeLineOnRandomEdge() {
     prevY = y;
 }
 
+function setDisplayProperties() {
+    if (width > height) {
+        // Landscape mode
+        stopTime = 20000; // 20 seconds
+        strokeWidth = 1;
+    } else {
+        // Portrait mode
+        stopTime = 10000; // 10 seconds
+        strokeWidth = 0.5;
+    }
+}
+
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
+    setDisplayProperties(); // Adjust properties based on new aspect ratio after resize
 }
