@@ -12,7 +12,6 @@ function setup() {
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent('canvas-container');
     background(255);
-    // Initialize line to start on a random edge of the canvas
     initializeLineOnRandomEdge();
     setDisplayProperties();
     startTime = millis();
@@ -41,11 +40,9 @@ function draw() {
         yoff += 0.01;
     }
 
-    // If it exits the screen, pick a random edge to re-enter
     if (x > width || x < 0 || y > height || y < 0) {
         initializeLineOnRandomEdge();
 
-        // Stop drawing if the stopTime has passed
         if ((millis() - startTime) >= stopTime) {
             stopDrawing = true;
         }
@@ -56,19 +53,19 @@ function initializeLineOnRandomEdge() {
     let edge = int(random(4));
 
     switch (edge) {
-        case 0:  // top edge
+        case 0:
             x = random(width);
             y = 0;
             break;
-        case 1:  // bottom edge
+        case 1:
             x = random(width);
             y = height;
             break;
-        case 2:  // left edge
+        case 2:
             x = 0;
             y = random(height);
             break;
-        case 3:  // right edge
+        case 3:
             x = width;
             y = random(height);
             break;
@@ -79,18 +76,27 @@ function initializeLineOnRandomEdge() {
 }
 
 function setDisplayProperties() {
-    if (width > height) {
-        // Landscape mode
-        stopTime = 10000; // 20 seconds
-        strokeWidth = 1;
-    } else {
-        // Portrait mode
-        stopTime = 5000; // 10 seconds
+    let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    if (isMobile) {
         strokeWidth = 0.5;
+        if (width > height) {
+            stopTime = 5000;  // 5 seconds for landscape on mobile
+        } else {
+            stopTime = 4000;  // 4 seconds for portrait on mobile
+        }
+    } else {
+        if (width > height) {
+            stopTime = 10000;  // 20 seconds for landscape on desktop
+            strokeWidth = 1;
+        } else {
+            stopTime = 5000;  // 10 seconds for portrait on desktop
+            strokeWidth = 0.5;
+        }
     }
 }
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
-    setDisplayProperties(); // Adjust properties based on new aspect ratio after resize
+    setDisplayProperties();  // adjust properties based on new aspect ratio after resize
 }
