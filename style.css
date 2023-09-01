@@ -8,7 +8,6 @@
     position: fixed;
     z-index: 0;
 }
-/* Existing CSS */
 body, html {
     margin: 0;
     padding: 0;
@@ -20,11 +19,21 @@ body, html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
 }
-/* New CSS */
+.language-selector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    padding: 2vh 3vw;
+
+}
+
+.language-selector span {
+    cursor: pointer;
+}
 .container {
     position: relative;
     overflow: hidden;
-
 }
 
 .descriptions {
@@ -139,7 +148,6 @@ a:link {
         transform: rotate(32deg) perspective(791px) rotateX(247deg) rotateY(355deg) rotateZ(332deg);
     }
 
-
     #rect {
         width: 0;
         height: 0;
@@ -197,7 +205,6 @@ a:link {
         transform-style: flat;
         background-color: #00ffe75e;
         box-shadow: 8px 0.3vw 25px #00e7ff;
-
     }
     .footer{
         font-size: 86%;
