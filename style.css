@@ -200,6 +200,12 @@ a:link {
 
     }
     .footer{
-        font-size: 86%
+        font-size: 86%;
+        height:9vh;
+
+    }
+    .footerElements{
+        padding: 0 0 0 1vh;
+        font-size: 1.6vh;
     }
 }
