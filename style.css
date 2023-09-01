@@ -20,12 +20,11 @@ body, html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
 }
-
 /* New CSS */
 .container {
-    min-height: 200vh; /* 200% of the viewport height */
     position: relative;
     overflow: hidden;
+
 }
 
 .descriptions {
@@ -38,14 +37,13 @@ body, html {
     max-width: 44vw;
     text-align: justify;
     height: fit-content;
-    min-height: 100vh; /* Equal to one viewport height */
     pointer-events:none;
     z-index: 1;
 
 }
 .descriptions > div {
     margin-top: 100vh;
-    padding-top: 5vh;
+    padding-top: 3vh;
 }
 a:link {
     color: #161615;
@@ -119,6 +117,7 @@ a:link {
     .footer{
         font-size: 2vh;
     }
+
     .services {
         color: #161615;
         position: sticky;
@@ -127,6 +126,9 @@ a:link {
         /*! left: 39%; */
         top: 5vh;
         padding: 0 7vh 2%;
+    }
+    .descriptions > div {
+        padding-top: 5vh;
     }
 
     .square {
@@ -140,12 +142,9 @@ a:link {
 
 
     #rect {
-        width: 55.5%;
-        height: 3%;
-        left: 49%;
-        top: 49%;
+        width: 0;
+        height: 0;
         transform-style: flat;
-        transform: perspective(14em) rotateX(76deg) rotateY(339deg) rotateZ(78deg);
         visibility: hidden;
     }
 
