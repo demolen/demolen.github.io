@@ -18,6 +18,7 @@ body, html {
     font-weight: normal;
     overflow-y: auto; /* Allow scrolling */
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 /* New CSS */
 .container {
@@ -34,6 +35,9 @@ body, html {
     padding: 1% 11vh 2%;
     max-width: 40%;
     text-align: justify;
+    height: fit-content;
+    min-height: 100vh; /* Equal to one viewport height */
+    overflow-y: auto; /* Scrollable */
 }
 
 a:link {

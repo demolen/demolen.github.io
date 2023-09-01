@@ -100,11 +100,3 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
     setDisplayProperties();  // adjust properties based on new aspect ratio after resize
 }
-// Listen for a click on the element with id="scrollToIT"
-document.getElementById("scrollToIT").addEventListener("click", function(event) {
-    // Prevent the default action (navigating to a new page)
-    event.preventDefault();
-
-    // Smoothly scroll to the element with id="IT"
-    document.getElementById("IT").scrollIntoView({behavior: "smooth"});
-});
