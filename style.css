@@ -35,7 +35,7 @@ body, html {
     color: #161615;
     font-size: 2vh;
     padding: 0 7vh 2%;
-    max-width: 40%;
+    max-width: 44vw;
     text-align: justify;
     height: fit-content;
     min-height: 100vh; /* Equal to one viewport height */
@@ -182,9 +182,11 @@ a:link {
         position: sticky;
         text-align: left;
         font-size: 2vh;
-        /*! left: 39%; */
-        top: 1%;
-        padding: 0 5vh 2%;
+        top: 4vh;
+        padding: 0 4vh 2%;
+    }
+    .descriptions{
+        padding-left: 4vh;
     }
     #rect {
         width: 15.3%;
