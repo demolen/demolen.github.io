@@ -126,7 +126,6 @@ a:link {
         /*! left: 39%; */
         top: 1%;
         padding: 1% 11vh 2%;
-        max-width: 24%;
     }
 
     .square {
@@ -179,10 +178,13 @@ a:link {
         visibility: hidden;
     }
     .services {
+        color: #161615;
         position: sticky;
-        left: 8%;
-        top: 4%;
-        font-size: 86%;
+        text-align: left;
+        font-size: 2vh;
+        /*! left: 39%; */
+        top: 1%;
+        padding: 1% 5vh 2%;
     }
     #rect {
         width: 15.3%;
