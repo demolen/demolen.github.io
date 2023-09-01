@@ -11,6 +11,7 @@ function setup() {
     frameRate(30);
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent('canvas-container');
+    cnv.elt.style.pointerEvents = "none";  // this line disables mouse events for the canvas
     background(255);
     initializeLineOnRandomEdge();
     setDisplayProperties();

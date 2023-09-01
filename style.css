@@ -16,14 +16,16 @@ body, html {
     width: 100%;
     font-family: 'Didact Gothic Regular', sans-serif;
     font-weight: normal;
-    overflow-y: auto; /* Allow scrolling */
     overflow-x: hidden;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
+
 /* New CSS */
 .container {
     min-height: 200vh; /* 200% of the viewport height */
     position: relative;
+    overflow: hidden;
 }
 
 .descriptions {
@@ -37,7 +39,8 @@ body, html {
     text-align: justify;
     height: fit-content;
     min-height: 100vh; /* Equal to one viewport height */
-    overflow-y: auto; /* Scrollable */
+    pointer-events:none;
+
 }
 
 a:link {
@@ -46,8 +49,8 @@ a:link {
     text-decoration: none;
 }
 .services {
+    position: sticky;
     color: #161615;
-    position: absolute;
     text-align: left;
 }
 
@@ -115,7 +118,7 @@ a:link {
     }
     .services {
         color: #161615;
-        position: absolute;
+        position: sticky;
         text-align: left;
         font-size: 2vh;
         /*! left: 39%; */
@@ -174,6 +177,7 @@ a:link {
         visibility: hidden;
     }
     .services {
+        position: sticky;
         left: 8%;
         top: 4%;
         font-size: 86%;
