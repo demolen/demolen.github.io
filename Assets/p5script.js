@@ -81,11 +81,11 @@ function initializeLineOnRandomEdge() {
 function setDisplayProperties() {
     if (width > height) {
         // Landscape mode
-        stopTime = 20000; // 20 seconds
+        stopTime = 10000; // 20 seconds
         strokeWidth = 1;
     } else {
         // Portrait mode
-        stopTime = 10000; // 10 seconds
+        stopTime = 5000; // 10 seconds
         strokeWidth = 0.5;
     }
 }
