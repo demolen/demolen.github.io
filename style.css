@@ -36,9 +36,8 @@ body, html {
     max-width: 44vw;
     text-align: justify;
     height: fit-content;
-    pointer-events:none;
     z-index: 1;
-    padding: 0 7vh 70vh;
+    padding: 0 7vh 95vh;
 
 }
 .descriptions > div {
