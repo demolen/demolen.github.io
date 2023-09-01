@@ -34,7 +34,7 @@ body, html {
     width: 100%; /* Take up full width */
     color: #161615;
     font-size: 2vh;
-    padding: 1% 11vh 2%;
+    padding: 0 7vh 2%;
     max-width: 40%;
     text-align: justify;
     height: fit-content;
@@ -124,8 +124,8 @@ a:link {
         text-align: left;
         font-size: 2vh;
         /*! left: 39%; */
-        top: 1%;
-        padding: 1% 11vh 2%;
+        top: 5vh;
+        padding: 0 7vh 2%;
     }
 
     .square {
@@ -184,7 +184,7 @@ a:link {
         font-size: 2vh;
         /*! left: 39%; */
         top: 1%;
-        padding: 1% 5vh 2%;
+        padding: 0 5vh 2%;
     }
     #rect {
         width: 15.3%;
