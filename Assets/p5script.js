@@ -91,7 +91,7 @@ function setDisplayProperties() {
             strokeWidth = 1;
         } else {
             stopTime = 5000;  // 10 seconds for portrait on desktop
-            strokeWidth = 0.5;
+            strokeWidth = 1;
         }
     }
 }
