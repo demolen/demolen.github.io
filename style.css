@@ -1,8 +1,12 @@
 @font-face {
     font-family: 'Didact Gothic Regular';
+    src: url('Assets/DidactGothic-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Assets/DidactGothic-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('Assets/DidactGothic-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('Assets/DidactGothic-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('Assets/DidactGothic-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
     font-style: normal;
     font-weight: normal;
-    src: local('Didact Gothic Regular'), url('Assets/DidactGothic-Regular.woff') format('woff');
 }
 
 #canvas-container {
