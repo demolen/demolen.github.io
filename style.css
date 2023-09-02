@@ -329,13 +329,12 @@ a {
 .descriptions {
     position: sticky;
     top: 100vh;
-    /* Start at the bottom of the first "page" */
     color: #161615;
     font-size: 1em;
-    max-width: 64vw;
+    max-width: 92vw;
     text-align: justify;
     z-index: 1;
-    padding: 0 7vh 95vh;
+    padding: 0 2vw 0 7vw;
 }
 
 .descriptions > div {
@@ -461,9 +460,9 @@ a:link {
         visibility: hidden;
     }
     .descriptions {
-        padding: 0 7vh 49vh 15vh;
-        font-size: 2.5vw;
-        max-width: 77vw;
+        padding: 0 0 49vh 11vw;
+        font-size: 1em;
+        max-width: 92vw;
     }
     .descriptions > div {
         padding-top: 13vh;
