@@ -388,14 +388,13 @@ a:link {
     width: 100%;
     height: 14vh;
     text-align: left;
-    padding: 10px 0 10px 5%;
     clip-path: polygon(0px -59px, 78.81% 52.71%, 100% 20%, 100% 100%, 0% 100%);
     z-index: 2;
     /* Higher than the square */
 }
 
 .footerElements {
-    padding: 0 0 0 0;
+    padding: 0 0 0 5vw;
 }
 
 
@@ -413,7 +412,8 @@ a:link {
         box-shadow: 10vw 10vw gold;
     }
     .footer {
-        font-size: 2vh;
+        font-size: 3vh;
+        line-height: 1em;
     }
     .descriptions > div {
         padding-top: 10vh;
@@ -482,11 +482,11 @@ a:link {
     }
     .footer {
         font-size: 86%;
-        height: 9vh;
-        padding: 0 0 10px 5%
+        height: 13vh;
+        padding: 0 0 0 5vw;
     }
     .footerElements {
         padding: 0 0 0 1vh;
-        font-size: 1.6vh;
+        font-size: 2vh;
     }
 }
