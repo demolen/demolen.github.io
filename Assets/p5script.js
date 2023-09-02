@@ -158,7 +158,7 @@ function updateSquareHeight() {
     // Check if it's in portrait mode
     if (window.innerHeight > window.innerWidth) {
         initialHeight = 12.7;
-        finalHeight = 61;
+        finalHeight = 35;
         initialWidth = 96;
         finalWidth = 96;
     } else {
