@@ -107,10 +107,37 @@ function hideMenu() {
     document.getElementById("toggle").checked = false;
 }
 
+// Function to check if a point is inside a circle
+function isPointInCircle(x, y, circleCenterX, circleCenterY, radius) {
+    const dx = x - circleCenterX;
+    const dy = y - circleCenterY;
+    return dx * dx + dy * dy <= radius * radius;
+}
+
+// Function to handle document clicks
+function handleDocumentClick(event) {
+    const menuContainer = document.querySelector('.menu-container');
+    const toggleButton = document.querySelector('.button-toggle');
+    const toggleRect = toggleButton.getBoundingClientRect();
+
+    // Calculate the center and effective radius of the circle
+    const circleCenterX = toggleRect.left + toggleRect.width / 2;
+    const circleCenterY = toggleRect.top + toggleRect.height / 2;
+    const radius = 550;  // This should match the maximum radius in your CSS
+
+    if (!menuContainer.contains(event.target) &&
+        !isPointInCircle(event.clientX, event.clientY, circleCenterX, circleCenterY, radius)) {
+        hideMenu();
+    }
+}
+
 // Attach event listeners to nav items
 document.addEventListener("DOMContentLoaded", function() {
     const navItems = document.querySelectorAll('.nav-item');
     navItems.forEach(item => {
         item.addEventListener('click', hideMenu);
     });
+
+    // Attach event listener to document to handle clicks outside menu
+    document.addEventListener('click', handleDocumentClick);
 });
