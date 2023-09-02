@@ -38,12 +38,10 @@ body, html {
 .descriptions {
     position: sticky;
     top: 100vh; /* Start at the bottom of the first "page" */
-    width: 100%; /* Take up full width */
     color: #161615;
     font-size: 2vh;
     max-width: 44vw;
     text-align: justify;
-    height: fit-content;
     z-index: 1;
     padding: 0 7vh 95vh;
 
