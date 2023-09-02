@@ -188,6 +188,7 @@ a {
 }
 .nav-item:nth-child(3) {
     transition-delay: 0.1s;
+    letter-spacing: -7px;
 }
 .nav-item:nth-child(3):before {
     transition-delay: 0.1s;
@@ -199,7 +200,7 @@ a {
     transition-delay: 0.15s;
 }
 .nav-item:nth-child(1) {
-    letter-spacing: -8px;
+    letter-spacing: 4px;
 }
 .nav-item:nth-child(2) {
     letter-spacing: -7px;
