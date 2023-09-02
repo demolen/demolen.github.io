@@ -412,7 +412,7 @@ a:link {
         box-shadow: 10vw 10vw gold;
     }
     .footer {
-        font-size: 3vh;
+        font-size: 1em;
         line-height: 1em;
     }
     .descriptions > div {
@@ -487,6 +487,6 @@ a:link {
     }
     .footerElements {
         padding: 0 0 0 1vh;
-        font-size: 2vh;
+        font-size: 1em;
     }
 }
