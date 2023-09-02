@@ -101,3 +101,16 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
     setDisplayProperties();  // adjust properties based on new aspect ratio after resize
 }
+
+// Function to hide the menu
+function hideMenu() {
+    document.getElementById("toggle").checked = false;
+}
+
+// Attach event listeners to nav items
+document.addEventListener("DOMContentLoaded", function() {
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        item.addEventListener('click', hideMenu);
+    });
+});
