@@ -8,7 +8,7 @@ let stopTime;
 let strokeWidth;
 
 function setup() {
-    frameRate(30);
+    frameRate(60);
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent('canvas-container');
     cnv.elt.style.pointerEvents = "none";  // this line disables mouse events for the canvas
@@ -88,7 +88,7 @@ function setDisplayProperties() {
         }
     } else {
         if (width > height) {
-            stopTime = 10000;  // 20 seconds for landscape on desktop
+            stopTime = 60000;  // 20 seconds for landscape on desktop
             strokeWidth = 1;
         } else {
             stopTime = 5000;  // 10 seconds for portrait on desktop
