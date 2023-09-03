@@ -315,7 +315,7 @@ a:link {
 }
 
 .footer {
-    background-color: white;
+    background-color: #ffffffe2;
     color: #000000;
     position: fixed;
     bottom: 0;
@@ -355,7 +355,10 @@ a:link {
         align-items: center;  /* Center items vertically */
     }
     .descriptions > div {
-        padding-top: 10vh;
+        z-index: 1;
+        padding: 10vh 5vw;
+        background-color: #ffffffe2;
+        border-radius: 55px;
     }
     .square {
         width: 27vw;
