@@ -166,7 +166,7 @@ a {
     float: left;
     clear: both;
     color: transparent;
-    font-size: 14px;
+    font-size: 1em;
     letter-spacing: -7px;
     height: 7px;
     line-height: 7px;
@@ -189,7 +189,7 @@ a {
 }
 .nav-item:nth-child(3) {
     transition-delay: 0.1s;
-    letter-spacing: -7px;
+    letter-spacing: -8px;
 }
 .nav-item:nth-child(3):before {
     transition-delay: 0.1s;
@@ -201,10 +201,10 @@ a {
     transition-delay: 0.15s;
 }
 .nav-item:nth-child(1) {
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 }
 .nav-item:nth-child(2) {
-    letter-spacing: -7px;
+    letter-spacing: -8px;
 }
 .nav-item:nth-child(n+4) {
     letter-spacing: -8px;
@@ -420,11 +420,12 @@ a:link {
         padding-top: 13vh;
     }
     .footer {
-        font-size: 86%;
+        font-size: 1em;
         height: auto;
         padding: 0 0 0 5vw;
         display: flex;  /* Add Flexbox */
         align-items: center;  /* Center items vertically */
+        line-height: 1em;
     }
     .footerElements {
         padding: 0 0 0 1vh;
