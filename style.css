@@ -167,7 +167,7 @@ a {
 /* Menu */
 .nav {
     display: inline-block;
-    margin: 25px 25px 20px;
+    margin: 25px 25px 5vw;
     pointer-events: none;
     transition: 0.5s;
 }
@@ -248,7 +248,7 @@ a {
 .language-selector {
     position: absolute;
     z-index: 40;
-    padding: 2vh 3vw;
+    padding: 2vh 5vw;
     flex-grow: 0;
     top: 2vh;
 }
