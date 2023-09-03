@@ -419,12 +419,57 @@ a:link {
         padding-left: 4vw;
     }
     .square {
-        width: 30vw;
-        height: 60vh;
-        top: 16vh;
-        left: 27.29%;
+        width: 27vw;
+        height: 34vh;
+        top: 40vh;
+        left: 56.29%;
         transform-style: flat;
-        transform: rotate(32deg) perspective(791px) rotateX(247deg) rotateY(355deg) rotateZ(332deg);
+        transform: rotate(-318deg);
+    }
+}
+    .square {
+    background: linear-gradient(269deg, rgba(18, 150, 215, 0) 0%, rgba(216, 194, 255, 0.53) 34%, rgba(113, 233, 222, 0.22) 100%);
+    position: absolute;
+    z-index: 3;}
+
+    #rect {
+        width: 0;
+        height: 0;
+        transform-style: flat;
+        visibility: hidden;
+    }
+    .square2 {
+        width: 24%;
+        height: 41%;
+        top: 24%;
+        left: 1.29%;
+        transform: rotate(328deg) rotateX(335deg) rotateY(5deg) rotateZ(160grad);
+        margin-left: 56vw;
+        clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
+    }
+
+
+
+/* Placeholder for styles specific to portrait orientation */
+
+@media (orientation: portrait) {
+    .square3 {
+        width: 24%;
+        height: 41%;
+        top: 12%;
+        left: 3.29%;
+        transform: rotate(300deg) rotateX(335deg) rotateY(5deg) rotateZ(162grad);
+        margin-left: 56vw;
+        clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
+        box-shadow: 10vw 10vw gold;
+    }
+    .square {
+        width: 27vw;
+        height: 34vh;
+        top: 40vh;
+        left: 56.29%;
+        transform-style: flat;
+        transform: rotate(-318deg);
     }
     #rect {
         width: 0;
@@ -441,26 +486,6 @@ a:link {
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
     }
-}
-
-
-/* Placeholder for styles specific to portrait orientation */
-
-@media (orientation: portrait) {
-    .square2 {
-        width: 96%;
-        height: 12.7%;
-        top: 55%;
-        left: 12.3%;
-        transform-style: flat;
-        transform: rotate(110deg) perspective(500px) rotateX(-1deg) rotateY(-55deg) rotateZ(20deg);
-        box-shadow: 12px -3vw 20px 0 #806093a6;
-        /*background: linear-gradient(269deg, rgb(36, 15, 0) 0%, rgb(119, 84, 181) 34%, rgba(233, 120, 113, 0.67) 100%);*/
-        background: linear-gradient(269deg, rgb(255, 255, 255) 0%, rgb(95, 55, 166) 34%, rgba(255, 22, 98, 0.47) 100%);
-    }
-    .square {
-        visibility: hidden;
-    }
     .descriptions {
         padding: 0 0 49vh 11vw;
         font-size: 1em;
@@ -468,16 +493,6 @@ a:link {
     }
     .descriptions > div {
         padding-top: 13vh;
-    }
-    #rect {
-        width: 15.3%;
-        height: 16.8%;
-        left: 38.3%;
-        top: 28%;
-        transform: perspective(60px) rotateX(-5deg) rotateY(-25deg) rotateZ(0deg);
-        transform-style: flat;
-        background-color: #00ffe75e;
-        box-shadow: 8px 0.3vw 25px #00e7ff;
     }
     .footer {
         font-size: 86%;

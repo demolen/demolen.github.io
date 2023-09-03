@@ -153,14 +153,14 @@ function updateSquareHeight() {
     // Calculate the percentage of how much has been scrolled
     const scrollPercent = (scrollY / documentHeight) * 100;
 
-    let initialHeight, finalHeight, initialWidth, finalWidth
+    let initialHeight, finalHeight, initialWidth, finalWidth, initialWidthGradient, initialHeightGradient, finalWidthGradient, finalHeightGradient;
 
     // Check if it's in portrait mode
     if (window.innerHeight > window.innerWidth) {
-        initialHeight = 12.7;
+        initialHeight = 41;
         finalHeight = 35;
-        initialWidth = 96;
-        finalWidth = 96;
+        initialWidth = 24;
+        finalWidth = 45;
     } else {
         // Values for landscape mode
         initialHeight = 41;
@@ -189,6 +189,7 @@ function updateSquareHeight() {
 
 // Select the .square2 element
 const square2 = document.querySelector('.square2');
+const square6 = document.querySelector('.square6');
 
 // Initial call to set the height
 updateSquareHeight();
