@@ -275,7 +275,7 @@ a {
     flex-direction: column;
 }
 
-.descriptions > div {
+.descriptions > p {
     margin-top: 100vh;
     padding-top: 3vh;
 }
@@ -314,7 +314,7 @@ a:link {
     box-shadow: 0 1.3vw 28px #2a2626;
 }
 
-.footer {
+footer {
     background-color: #ffffffe2;
     color: #000000;
     position: fixed;
@@ -348,13 +348,13 @@ a:link {
         box-shadow: -10vw 10vw gold;
     }
 
-    .footer {
+    footer {
         font-size: 1em;
         line-height: 1em;
         display: flex;  /* Add Flexbox */
         align-items: center;  /* Center items vertically */
     }
-    .descriptions > div {
+    .descriptions > p {
         z-index: 1;
         padding: 10vh 5vw;
         background-color: #ffffffe2;
@@ -431,10 +431,10 @@ a:link {
     .descriptions {
         font-size: 1em;
     }
-    .descriptions > div {
+    .descriptions > p {
         padding-top: 13vh;
     }
-    .footer {
+    footer {
         font-size: 1em;
         height: auto;
         padding: 0 0 0 5vw;

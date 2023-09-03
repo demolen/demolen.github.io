@@ -23,56 +23,54 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
 </head>
 <body>
-<header>
+<header role="banner">
     <div class="menu-container">
-        <input id="toggle" type="checkbox">
+        <input id="toggle" type="checkbox" aria-label="Navigation menu toggle button">
 
         <label class="toggle-container" for="toggle">
             <span class="button button-toggle"></span>
         </label>
 
-            <nav class="nav">
-            <a id="menu_IT" class="nav-item" href="#IT">IT</a>
-            <a id="menu_Automatisierung" class="nav-item" href="#Automatisierung">Automatisierung</a>
-            <a id="menu_Cloud" class="nav-item" href="#Cloud">Cloud Lösungen</a>
-            <a id="menu_Workflow" class="nav-item" href="#Workflow">Workflow Optimierung</a>
-            <a id="menu_KI" class="nav-item" href="#KI">KI Technologien</a><br>
-            <a id="menu_Design" class="nav-item" href="#Design">Design</a>
+        <nav class="nav" role="navigation" aria-label="Primary">
+            <a id="menu_IT" class="nav-item" href="#IT" aria-label="Go to IT section">IT</a>
+            <a id="menu_Automatisierung" class="nav-item" href="#Automatisierung" aria-label="Go to Automatisierung section">Automatisierung</a>
+            <a id="menu_Cloud" class="nav-item" href="#Cloud" aria-label="Go to Cloud Lösungen section">Cloud Lösungen</a>
+            <a id="menu_Workflow" class="nav-item" href="#Workflow" aria-label="Go to Workflow Optimierung section">Workflow Optimierung</a>
+            <a id="menu_KI" class="nav-item" href="#KI" aria-label="Go to KI Technologien section">KI Technologien</a>
+            <a id="menu_Design" class="nav-item" href="#Design" aria-label="Go to Design section">Design</a>
         </nav>
     </div>
-    <div class="language-selector">
-        <span id="en">en</span> . <span id="de">de</span>
+    <div class="language-selector" role="region" aria-label="Language selection">
+        <span id="en" tabindex="0" role="button" aria-label="Switch language to English">en</span> . <span id="de" tabindex="0" role="button" aria-label="Switch language to German">de</span>
     </div>
 
 
 </header>
 
 
-    <main class="container" >
-        <div id="canvas-container"></div>
-        <article class="descriptions">
-            <div id="IT">Wir sind Ihr vertrauenswürdiger Partner für die Planung und Implementierung von IT- und Netzwerklösungen, die genau auf Ihre Bedürfnisse zugeschnitten sind. Wir kümmern uns um alles, von Servern und Arbeitsstationen bis hin zu DNS und E-Mail, damit Sie sich auf Ihr Kerngeschäft konzentrieren können.</div>
-            <div id="Automatisierung">Wir verstehen, dass jede Organisation einzigartig ist. Deshalb entwickeln wir maßgeschneiderte Automatisierungsskripte und Tools, die speziell auf Ihre betrieblichen Herausforderungen und Anforderungen abgestimmt sind.</div>
-            <div id="Cloud">Nutzen Sie die Flexibilität und Leistungsfähigkeit der Cloud mit unseren individuellen Lösungen für Microsoft Azure und Google Cloud. Wir begleiten Sie sicher und effizient in die Zukunft der Technologie.</div>
-            <div id="Workflow">Wir setzen nicht einfach nur Technologie ein; wir entwickeln proaktive Strategien zur Optimierung Ihres internen Workflows. Unser Ziel ist es, Ihren organisatorischen Aufwand zu minimieren und Ihre Effizienz zu steigern.</div>
-            <div id="KI">Wir sind stolz darauf, KI-Technologien einzusetzen, um intelligente und effiziente Lösungen zu entwickeln, die Ihre Geschäftsprozesse revolutionieren. Mit uns sind Sie immer einen Schritt voraus.</div>
-            <div id="Design">Lieben Sie den modernen und ansprechenden Stil dieser Website? Das ist kein Zufall! Wir sind Pioniere im Bereich des organischen und futuristischen Designs und bieten Ihnen innovative Möglichkeiten, Ihre Marke eindrucksvoll darzustellen.</div>
+<main class="container" role="main">
+    <div id="canvas-container"></div>
+    <article class="descriptions" role="article">
+            <p id="IT">Wir sind Ihr vertrauenswürdiger Partner für die Planung und Implementierung von IT- und Netzwerklösungen, die genau auf Ihre Bedürfnisse zugeschnitten sind. Wir kümmern uns um alles, von Servern und Arbeitsstationen bis hin zu DNS und E-Mail, damit Sie sich auf Ihr Kerngeschäft konzentrieren können.</p>
+            <p id="Automatisierung">Wir verstehen, dass jede Organisation einzigartig ist. Deshalb entwickeln wir maßgeschneiderte Automatisierungsskripte und Tools, die speziell auf Ihre betrieblichen Herausforderungen und Anforderungen abgestimmt sind.</p>
+            <p id="Cloud">Nutzen Sie die Flexibilität und Leistungsfähigkeit der Cloud mit unseren individuellen Lösungen für Microsoft Azure und Google Cloud. Wir begleiten Sie sicher und effizient in die Zukunft der Technologie.</p>
+            <p id="Workflow">Wir setzen nicht einfach nur Technologie ein; wir entwickeln proaktive Strategien zur Optimierung Ihres internen Workflows. Unser Ziel ist es, Ihren organisatorischen Aufwand zu minimieren und Ihre Effizienz zu steigern.</p>
+            <p id="KI">Wir sind stolz darauf, KI-Technologien einzusetzen, um intelligente und effiziente Lösungen zu entwickeln, die Ihre Geschäftsprozesse revolutionieren. Mit uns sind Sie immer einen Schritt voraus.</p>
+            <p id="Design">Lieben Sie den modernen und ansprechenden Stil dieser Website? Das ist kein Zufall! Wir sind Pioniere im Bereich des organischen und futuristischen Designs und bieten Ihnen innovative Möglichkeiten, Ihre Marke eindrucksvoll darzustellen.</p>
         </article>
-    </main>
-    <div class="shapeContainer">
-        <div class="square"></div>
-        <div class="square2"></div>
-        <div class="square3"></div>
-        <div id="rect"></div>
-    </div>
-    <div class="footer">
-        <div class="footerElements">
-            <address>
-            <p><a href="mailto:contact@milad.studio">contact@milad.studio</a></p>
-            <p><a href="tel:+4915789216714">+49 (157) 8921-6714</a></p>
-            </address>
-        </div>
-    </div>
+</main>
+<div class="shapeContainer" aria-hidden="true">
+    <div class="square"></div>
+    <div class="square2"></div>
+    <div class="square3"></div>
+    <div id="rect"></div>
+</div>
+<footer class="footer" role="contentinfo">
+    <address class="footerElements">
+        <p><a href="mailto:contact@milad.studio" aria-label="Send email to contact@milad.studio">contact@milad.studio</a></p>
+        <p><a href="tel:+4915789216714" aria-label="Call us at +49 (157) 8921-6714">+49 (157) 8921-6714</a></p>
+    </address>
+</footer>
     <script src="Assets/p5script.js"></script>
     <script src="Assets/Language.js"></script>
 </body>
