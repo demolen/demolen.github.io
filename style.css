@@ -308,10 +308,11 @@ a:link {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 14vh;
+    height: auto;
     text-align: left;
     z-index: 2;
-    /* Higher than the square */
+    display: flex; /* Add Flexbox */
+    align-items: center; /* Center items vertically */
 }
 
 .footerElements {
@@ -335,6 +336,8 @@ a:link {
     .footer {
         font-size: 1em;
         line-height: 1em;
+        display: flex;  /* Add Flexbox */
+        align-items: center;  /* Center items vertically */
     }
     .descriptions > div {
         padding-top: 10vh;
@@ -418,8 +421,10 @@ a:link {
     }
     .footer {
         font-size: 86%;
-        height: 13vh;
+        height: auto;
         padding: 0 0 0 5vw;
+        display: flex;  /* Add Flexbox */
+        align-items: center;  /* Center items vertically */
     }
     .footerElements {
         padding: 0 0 0 1vh;
