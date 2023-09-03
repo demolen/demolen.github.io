@@ -315,7 +315,7 @@ a:link {
 }
 
 footer {
-    background-color: #ffffffe2;
+    background-color: #ffffff;
     color: #000000;
     position: fixed;
     bottom: 0;
@@ -357,7 +357,7 @@ footer {
     .descriptions > p {
         z-index: 1;
         padding: 10vh 5vw;
-        background-color: #ffffffe2;
+        background-color: #ffffff;
         border-radius: 55px;
     }
     .square {
@@ -434,7 +434,7 @@ footer {
     .descriptions > p {
         z-index: 1;
         padding: 25vh 3vw;
-        background-color: #ffffffe2;
+        background-color: #ffffff;
         border-radius: 55px;
     }
     footer {
