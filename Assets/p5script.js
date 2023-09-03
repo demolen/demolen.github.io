@@ -164,9 +164,9 @@ function updateSquareHeight() {
     } else {
         // Values for landscape mode
         initialHeight = 41;
-        finalHeight = 60;
+        finalHeight = 51;
         initialWidth = 24;
-        finalWidth = 60;
+        finalWidth = 44;
     }
 
     // Calculate the new height based on scroll percent
