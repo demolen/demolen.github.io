@@ -167,7 +167,7 @@ a {
 /* Menu */
 .nav {
     display: inline-block;
-    margin: 25px 25px 5vw;
+    margin: 25px 25px 20px;
     pointer-events: none;
     transition: 0.5s;
 }
