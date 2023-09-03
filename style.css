@@ -9,9 +9,10 @@
     font-weight: normal;
 }
 .menu-container{
-    position: fixed;
-    z-index: 20;
+    margin-right: auto;  /* Push to the left */
+    z-index: 30;
     padding: 1vh 2vw;
+    flex-grow: 1;
 }
 #canvas-container {
     position: fixed;
@@ -34,7 +35,16 @@ html {
 
 
 
-
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    display: flex;
+    justify-content: flex-end; /* Right align */
+    align-items: center;
+}
 
 
 
@@ -234,11 +244,11 @@ a {
 
 
 .language-selector {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 5;
+    position: absolute;
+    z-index: 40;
     padding: 2vh 3vw;
+    flex-grow: 0;
+    top: 2vh;
 }
 
 .language-selector span {
