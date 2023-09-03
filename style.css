@@ -341,7 +341,6 @@ a:link {
         left: 3.29%;
         transform: rotate(10deg);
         margin-left: 56vw;
-        clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
         box-shadow: 10vw 10vw gold;
     }
     .footer {
@@ -377,8 +376,8 @@ a:link {
         width: 24%;
         height: 41%;
         top: 24%;
-        left: -5.71%;
-        transform: rotate(571deg);
+        left: 14.29%;
+        transform: rotate(100deg);
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
     }
