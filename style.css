@@ -132,9 +132,9 @@ a {
 .button-toggle {
     position: absolute;
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 25px;
+    width: 25px;
+    height: 25px;
+    margin: 24px;
     background-color: transparent;
     border: none;
     cursor: pointer;
