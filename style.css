@@ -432,7 +432,10 @@ footer {
         font-size: 1em;
     }
     .descriptions > p {
-        padding-top: 13vh;
+        z-index: 1;
+        padding: 25vh 3vw;
+        background-color: #ffffffe2;
+        border-radius: 55px;
     }
     footer {
         font-size: 1em;
