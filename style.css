@@ -328,7 +328,7 @@ a:link {
 }
 
 .footerElements {
-    padding: 0 0 0 5vw;
+    padding: 0 0 1vh 5vw;
 }
 
 
@@ -439,7 +439,7 @@ a:link {
         line-height: 1em;
     }
     .footerElements {
-        padding: 0 0 0 1vh;
+        padding: 0 0 1vh 1vh;
         font-size: 1em;
     }
 }
