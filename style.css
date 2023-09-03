@@ -71,7 +71,7 @@ a {
 }
 
 #toggle:checked ~ .toggle-container .button-toggle {
-    box-shadow: 0 0 0 550px rgb(161, 255, 246), inset 0 0 0 20px rgb(236, 202, 252);
+    box-shadow: 0 0 0 550px rgb(0, 0, 0), inset 0 0 0 20px rgb(255, 255, 255);
 }
 #toggle:checked ~ .toggle-container .button-toggle:before {
     transform: translateY(-50%) rotate(45deg) scale(1);
@@ -85,7 +85,7 @@ a {
     transform: translate(50px, 50px);
 }
 #toggle:checked ~ .nav .nav-item {
-    color: black;
+    color: white;
     letter-spacing: 0;
     height: 40px;
     line-height: 40px;
@@ -134,7 +134,7 @@ a {
     display: inline-block;
     width: 25px;
     height: 25px;
-    margin: 24px;
+    margin: 23px 21px 21px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -142,7 +142,7 @@ a {
     transition: 0.6s;
 }
 .button-toggle:hover {
-    box-shadow: 0 0 0 8px rgb(161, 255, 246), inset 0 0 0 20px rgb(161, 255, 246);
+    box-shadow: 0 0 0 8px rgb(0, 0, 0), inset 0 0 0 20px rgb(255, 255, 255);
 }
 .button-toggle:before, .button-toggle:after {
     position: absolute;
@@ -211,7 +211,7 @@ a {
     transition-delay: 0.15s;
 }
 .nav-item:nth-child(1) {
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 .nav-item:nth-child(2) {
     letter-spacing: -8px;
@@ -279,7 +279,6 @@ a {
 }
 
 a:link {
-    color: #161615;
     background-color: transparent;
     text-decoration: none;
 }
@@ -328,6 +327,9 @@ a:link {
 
 .footerElements {
     padding: 0 0 1vh 5vw;
+}
+.footerElements a {
+    color:black;
 }
 
 
