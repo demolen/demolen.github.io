@@ -261,7 +261,6 @@ a {
 }
 
 .descriptions {
-    position: sticky;
     top: 100vh;
     color: #161615;
     font-size: 1em;
