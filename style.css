@@ -33,7 +33,9 @@ html {
     transform-style: flat;
 }
 
-
+address{
+    font-style: normal;
+}
 
 header{
     position: fixed;

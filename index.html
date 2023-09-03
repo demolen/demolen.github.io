@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Milad</title>
+    <title>Studio Milad - Your Trusted IT and Design Partner</title>
+    <!-- SEO Meta Descriptions -->
+    <meta name="description" content="Studio Milad offers comprehensive IT, Automation, Cloud Solutions, Workflow Optimization, AI Technologies and Design services.">
+    <meta name="keywords" content="IT, Automation, Cloud, Workflow, AI, Design">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Studio Milad - Your Trusted IT and Design Partner">
+    <meta property="og:description" content="Studio Milad offers comprehensive IT, Automation, Cloud Solutions, Workflow Optimization, AI Technologies and Design services.">
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -16,22 +24,14 @@
 </head>
 <body>
 <header>
-
-
     <div class="menu-container">
-        <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
         <input id="toggle" type="checkbox">
 
-        <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
-
-        <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
         <label class="toggle-container" for="toggle">
-            <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
             <span class="button button-toggle"></span>
         </label>
 
-        <!-- The nav menu -->
-        <nav class="nav">
+            <nav class="nav">
             <a id="menu_IT" class="nav-item" href="#IT">IT</a>
             <a id="menu_Automatisierung" class="nav-item" href="#Automatisierung">Automatisierung</a>
             <a id="menu_Cloud" class="nav-item" href="#Cloud">Cloud Lösungen</a>
@@ -48,17 +48,17 @@
 </header>
 
 
-    <div class="container" >
+    <main class="container" >
         <div id="canvas-container"></div>
-        <div class="descriptions">
+        <article class="descriptions">
             <div id="IT">Wir sind Ihr vertrauenswürdiger Partner für die Planung und Implementierung von IT- und Netzwerklösungen, die genau auf Ihre Bedürfnisse zugeschnitten sind. Wir kümmern uns um alles, von Servern und Arbeitsstationen bis hin zu DNS und E-Mail, damit Sie sich auf Ihr Kerngeschäft konzentrieren können.</div>
             <div id="Automatisierung">Wir verstehen, dass jede Organisation einzigartig ist. Deshalb entwickeln wir maßgeschneiderte Automatisierungsskripte und Tools, die speziell auf Ihre betrieblichen Herausforderungen und Anforderungen abgestimmt sind.</div>
             <div id="Cloud">Nutzen Sie die Flexibilität und Leistungsfähigkeit der Cloud mit unseren individuellen Lösungen für Microsoft Azure und Google Cloud. Wir begleiten Sie sicher und effizient in die Zukunft der Technologie.</div>
             <div id="Workflow">Wir setzen nicht einfach nur Technologie ein; wir entwickeln proaktive Strategien zur Optimierung Ihres internen Workflows. Unser Ziel ist es, Ihren organisatorischen Aufwand zu minimieren und Ihre Effizienz zu steigern.</div>
             <div id="KI">Wir sind stolz darauf, KI-Technologien einzusetzen, um intelligente und effiziente Lösungen zu entwickeln, die Ihre Geschäftsprozesse revolutionieren. Mit uns sind Sie immer einen Schritt voraus.</div>
             <div id="Design">Lieben Sie den modernen und ansprechenden Stil dieser Website? Das ist kein Zufall! Wir sind Pioniere im Bereich des organischen und futuristischen Designs und bieten Ihnen innovative Möglichkeiten, Ihre Marke eindrucksvoll darzustellen.</div>
-        </div>
-    </div>
+        </article>
+    </main>
     <div class="shapeContainer">
         <div class="square"></div>
         <div class="square2"></div>
@@ -67,8 +67,10 @@
     </div>
     <div class="footer">
         <div class="footerElements">
-            <p><a href="mailto:contact@milad.studio" class="placeholder">contact@milad.studio</a></p>
-            <p><a href="tel:+4915789216714" class="placeholder">+49 (157) 8921-6714</a></p>
+            <address>
+            <p><a href="mailto:contact@milad.studio">contact@milad.studio</a></p>
+            <p><a href="tel:+4915789216714">+49 (157) 8921-6714</a></p>
+            </address>
         </div>
     </div>
     <script src="Assets/p5script.js"></script>
