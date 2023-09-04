@@ -292,7 +292,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-gap: 20px; /* Adjust the gap between blocks */
-    padding: 1vh 5vw;
+    padding: 1vh 3vw;
     margin-top: 100vh;
     margin-bottom: 20vh;
 }
