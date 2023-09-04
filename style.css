@@ -467,7 +467,7 @@ footer {
     }
     .descriptions {
         color: var(--secondary-color);
-        font-size: .4em;
+        font-size: 0.7em;
         text-align: justify;
         position: relative;
         z-index: 1;
