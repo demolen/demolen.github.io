@@ -18,6 +18,10 @@
     position: fixed;
     z-index: 0;
 }
+.descriptions h2 {
+    margin: 0;  /* Removes any default margin */
+    padding-bottom: 1vh;  /* Adds a small padding at the bottom, optional */
+}
 .logo{
     font-size: 17vh;
     padding: 52vh 4vw;
@@ -45,6 +49,7 @@ html {
 
 #penrose-container{
     position: static;
+    display: none;
 }
 address{
     font-style: normal;
@@ -249,15 +254,13 @@ a {
 
 
 
-
-
-
 .language-selector {
     position: absolute;
-    z-index: 40;
+    z-index: 9999999;
     padding: 2vh 5vw;
     flex-grow: 0;
     top: 2vh;
+    right: 0;
 }
 
 .language-selector span {
@@ -270,22 +273,28 @@ a {
 }
 
 .descriptions {
-    top: 100vh;
     color: #161615;
     font-size: 1em;
     text-align: justify;
+    position: relative;
     z-index: 1;
-    padding: 0 20vw;
-    margin-bottom: 90vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 33vh;
+    align-items: normal;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px; /* Adjust the gap between blocks */
+    padding: 1vh 10vw;
+    margin-top: 100vh;
+    margin-bottom: 20vh;
+}
+.grid-item {
+    background-color: #ffffff; /* Add background color if needed */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Optional shadow */
 }
 
-.descriptions > p {
-    margin-top: 56vh;
-    padding-top: 3vh;
+.descriptions p {
+    margin-top: 0;  /* Removes any top margin */
+    padding-top: 1vh;  /* Adds a small padding at the top, optional */
 }
 
 a:link {
@@ -362,10 +371,10 @@ footer {
         display: flex;
         align-items: center;
     }
-    .descriptions > p {
+    .descriptions p {
         z-index: 1;
-        padding: 10vh 5vw;
-        background-color: #ffffff;
+            background-color: #ffffff;
+        margin-top: 0;  /* Removes any top margin */
     }
     .square {
         width: 27vw;
@@ -414,7 +423,7 @@ footer {
     }
     .logo {
         font-size: 6em;
-        padding: 58vh 4vw;
+        padding: 53vh 4vw;
         z-index: 1;
         position: absolute;
         display: flex;
@@ -447,14 +456,20 @@ footer {
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
     }
     .descriptions {
-        font-size: 1em;
-    }
-    .descriptions > p {
+        color: #161615;
+        font-size: .4em;
+        text-align: justify;
+        position: relative;
         z-index: 1;
-        padding: 25vh 3vw;
-        background-color: #ffffff;
-        border-radius: 55px;
-        margin-top: 47vh;
+        align-items: normal;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 1vh 10vw;
+        margin-top: 87vh;
+        margin-bottom: 38vh;
+    }
+    .descriptions p {
     }
     footer {
         font-size: 1em;

@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Milad - Your Trusted IT and Design Partner</title>
-
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
     <meta name="description" content="Studio Milad offers comprehensive IT, Automation, Cloud Solutions, Workflow Optimization, AI Technologies and Design services.">
     <meta name="keywords" content="IT, Automation, Cloud, Workflow, AI, Design">
-
     <link rel="stylesheet" href="style.css">
-
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
@@ -19,11 +15,9 @@
 <header role="banner">
     <div class="menu-container">
         <input id="toggle" type="checkbox" aria-label="Navigation menu toggle button">
-
         <label class="toggle-container" for="toggle">
             <span class="button button-toggle"></span>
         </label>
-
         <nav class="nav" role="navigation" aria-label="Primary">
             <a id="menu_IT" class="nav-item" href="#IT" aria-label="Go to IT section">IT</a>
             <a id="menu_Automatisierung" class="nav-item" href="#Automatisierung" aria-label="Go to Automatisierung section">Automatisierung</a>
@@ -33,31 +27,52 @@
             <a id="menu_Design" class="nav-item" href="#Design" aria-label="Go to Design section">Design</a>
         </nav>
     </div>
-    <div class="language-selector" role="region" aria-label="Language selection">
-        <span id="en" tabindex="0" role="button" aria-label="Switch language to English">en</span> . <span id="de" tabindex="0" role="button" aria-label="Switch language to German">de</span>
-    </div>
 </header>
-
-
+<div class="language-selector" role="region" aria-label="Language selection">
+    <span id="en" tabindex="0" role="button" aria-label="Switch language to English">en</span> . <span id="de" tabindex="0" role="button" aria-label="Switch language to German">de</span>
+</div>
 <main class="container" role="main">
     <div id="canvas-container"></div>
-    <div class="logo">STUDIO<br>MILAD</div>
+    <h1 class="logo">STUDIO<br>MILAD</h1>
     <article class="descriptions" role="article">
-        <p id="IT">Als Ihr spezialisiertes Unternehmen für IT- und Netzwerklösungen biete ich Ihnen präzise auf Ihre Anforderungen abgestimmte Dienstleistungen an. Von Serverinfrastruktur und Arbeitsstationen bis hin zu DNS und E-Mail-Management, meine Expertise ermöglicht es Ihnen, sich auf Ihre Kernkompetenzen zu fokussieren.</p>
-        <div id="penrose-container"></div>
-        <p id="Automatisierung">Ich erkenne die Einzigartigkeit jeder Organisation und entwickle daher individuelle Automatisierungslösungen, die Ihre betrieblichen Herausforderungen effizient adressieren.</p>
-        <p id="Cloud">Die Flexibilität und Leistungsfähigkeit der Cloud-Technologie wird durch meine maßgeschneiderten Lösungen für Microsoft Azure und Google Cloud optimal für Sie nutzbar gemacht. Ich unterstütze Sie dabei, zukunftssichere Technologiestrategien zu implementieren.</p>
-        <p id="Workflow">Technologie ist nur ein Instrument, und ich verwende es strategisch zur Verbesserung Ihrer internen Arbeitsprozesse. Mein Ziel ist die Reduzierung Ihres organisatorischen Aufwands und die Maximierung Ihrer Effizienz.</p>
-        <p id="KI">Die Implementierung von KI-Technologien ermöglicht es mir, intelligente und effiziente Lösungen zu schaffen, die Ihre Geschäftsprozesse transformieren. So bleiben Sie immer einen Schritt voraus.</p>
-        <p id="Design">Ist Ihnen der ansprechende Stil dieser Webseite aufgefallen? Das ist das Ergebnis meiner Expertise im Bereich modernen und futuristischen Designs. Ich biete Ihnen vielfältige Möglichkeiten, Ihre Marke effektvoll zu präsentieren.</p>
+
+        <div class="grid-item">
+            <h2 id="IT">IT</h2>
+            <p>Ihr spezialisiertes Unternehmen für IT- und Netzwerklösungen biete ich Ihnen präzise auf Ihre Anforderungen abgestimmte Dienstleistungen an. Von Serverinfrastruktur und Arbeitsstationen bis hin zu DNS und E-Mail-Management, meine Expertise ermöglicht es Ihnen, sich auf Ihre Kernkompetenzen zu fokussieren.</p>
+        </div>
+        <div class="grid-item">
+            <h2 id="Automatisierung">Automatisierung</h2>
+            <p>Ich erkenne die Einzigartigkeit jeder Organisation und entwickle daher individuelle Automatisierungslösungen, die Ihre betrieblichen Herausforderungen effizient adressieren.</p>
+        </div>
+        <div class="grid-item">
+            <h2 id="Cloud">Cloud Lösungen</h2>
+            <p>Die Flexibilität und Leistungsfähigkeit der Cloud-Technologie wird durch meine maßgeschneiderten Lösungen für Microsoft Azure und Google Cloud optimal für Sie nutzbar gemacht. Ich unterstütze Sie dabei, zukunftssichere Technologiestrategien zu implementieren.</p>
+        </div>
+        <div class="grid-item">
+            <h2 id="Workflow">Workflow Optimierung</h2>
+            <p>Technologie ist nur ein Instrument, und ich verwende es strategisch zur Verbesserung Ihrer internen Arbeitsprozesse. Mein Ziel ist die Reduzierung Ihres organisatorischen Aufwands und die Maximierung Ihrer Effizienz.</p>
+        </div>
+        <div class="grid-item">
+            <h2 id="KI">KI Technologien</h2>
+            <p>Die Implementierung von KI-Technologien ermöglicht es mir, intelligente und effiziente Lösungen zu schaffen, die Ihre Geschäftsprozesse transformieren. So bleiben Sie immer einen Schritt voraus.</p>
+        </div>
+        <div class="grid-item">
+            <h2 id="Design">Design</h2>
+            <p>Ist Ihnen der ansprechende Stil dieser Webseite aufgefallen? Das ist das Ergebnis meiner Expertise im Bereich modernen und futuristischen Designs. Ich biete Ihnen vielfältige Möglichkeiten, Ihre Marke effektvoll zu präsentieren..</p>
+        </div>
+
     </article>
 </main>
+
+
+
 <div class="shapeContainer" aria-hidden="true">
     <div class="square"></div>
     <div class="square2"></div>
     <div class="square3"></div>
     <div id="rect"></div>
 </div>
+<div id="penrose-container"></div>
 <footer class="footer" role="contentinfo">
     <address class="footerElements">
         <p><a href="mailto:contact@milad.studio" aria-label="Send email to contact@milad.studio">contact@milad.studio</a></p>
@@ -68,7 +83,6 @@
 <script src="Assets/p5script.js" defer></script>
 <script src="Assets/Language.js" defer></script>
 <script src="Assets/penroseSketch.js" defer></script>
-
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -80,7 +94,6 @@
         "description": "Comprehensive IT and Design services including Automation, Cloud Solutions, Workflow Optimization, and AI Technologies."
     }
 </script>
-
 <meta property="og:title" content="Studio Milad - Your Trusted IT and Design Partner">
 <meta property="og:description" content="Studio Milad offers comprehensive IT, Automation, Cloud Solutions, Workflow Optimization, AI Technologies and Design services.">
 </body>
