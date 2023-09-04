@@ -288,9 +288,10 @@ a {
     margin-bottom: 20vh;
 }
 .grid-item {
-    background-color: #ffffff; /* Add background color if needed */
+    background-color: #ffffffee; /* Add background color if needed */
     padding: 20px; /* Add padding */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Optional shadow */
+    border-radius: 4px;
 }
 
 .descriptions p {
@@ -468,7 +469,7 @@ footer {
         grid-gap: 20px;
         padding: 1vh 5vw;
         margin-top: 87vh;
-        margin-bottom: 38vh;
+        margin-bottom: 19vh;
     }
     .descriptions p {
     }
