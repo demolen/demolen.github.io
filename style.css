@@ -8,6 +8,10 @@
     font-style: normal;
     font-weight: normal;
 }
+:root {
+    --main-color: #e3e3e3;
+}
+
 .menu-container{
     margin-right: auto;
     z-index: 30;
@@ -38,7 +42,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: var(--main-color);
     width: 100%;
     font-family: 'Didact Gothic Regular', sans-serif;
     font-weight: normal;
@@ -89,7 +93,7 @@ a {
 }
 
 #toggle:checked ~ .toggle-container .button-toggle {
-    box-shadow: 0 0 0 550px rgb(0, 0, 0), inset 0 0 0 20px rgb(255, 255, 255);
+    box-shadow: 0 0 0 550px rgb(0, 0, 0), inset 0 0 0 20px rgb(227, 227, 227);
 }
 #toggle:checked ~ .toggle-container .button-toggle:before {
     transform: translateY(-50%) rotate(45deg) scale(1);
@@ -103,7 +107,7 @@ a {
     transform: translate(50px, 50px);
 }
 #toggle:checked ~ .nav .nav-item {
-    color: white;
+    color: var(--main-color);
     letter-spacing: 0;
     height: 40px;
     line-height: 40px;
@@ -158,11 +162,11 @@ a {
     cursor: pointer;
     border-radius: 100%;
     transition: 0.6s;
-    box-shadow: 0 0 0 3px rgb(0, 0, 0), inset 0 0 0 20px rgb(255, 255, 255);
+    box-shadow: 0 0 0 3px rgb(0, 0, 0), inset 0 0 0 20px rgb(227, 227, 227);
 
 }
 .button-toggle:hover {
-    box-shadow: 0 0 0 8px rgb(0, 0, 0), inset 0 0 0 20px rgb(255, 255, 255);
+    box-shadow: 0 0 0 8px rgb(0, 0, 0), inset 0 0 0 20px rgb(227, 227, 227);
 }
 .button-toggle:before, .button-toggle:after {
     position: absolute;
@@ -288,7 +292,7 @@ a {
     margin-bottom: 20vh;
 }
 .grid-item {
-    background-color: #ffffff; /* Add background color if needed */
+    background-color: var(--main-color); /* Add background color if needed */
     padding: 2vw; /* Add padding */
     border-radius: 4px;
 }
@@ -311,7 +315,7 @@ a:link {
 }
 
 .square2 {
-    background-color: #f0f0f0;
+    background-color: #ffbfab;
     position: absolute;
     z-index: 0;
 }
@@ -333,7 +337,7 @@ a:link {
 }
 
 footer {
-    background-color: #ffffff;
+    background-color: var(--main-color);
     color: #000000;
     position: fixed;
     bottom: 0;
@@ -374,7 +378,7 @@ footer {
     }
     .descriptions p {
         z-index: 1;
-            background-color: #ffffff;
+            background-color: var(--main-color);
         margin-top: 0;  /* Removes any top margin */
     }
     .square {
