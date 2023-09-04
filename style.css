@@ -283,7 +283,7 @@ a {
 }
 
 .descriptions {
-    color: #161615;
+    color: var(--secondary-color)
     font-size: 1em;
     text-align: justify;
     position: relative;
