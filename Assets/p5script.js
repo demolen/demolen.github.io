@@ -1,106 +1,110 @@
-let xoff = 0;
-let yoff = 10000;
-let x, y;
-let prevX, prevY;
-let startTime;
-let stopDrawing = false;
-let stopTime;
-let strokeWidth;
+let sketch = function(p) {
+    let xoff = 0;
+    let yoff = 10000;
+    let x, y;
+    let prevX, prevY;
+    let startTime;
+    let stopDrawing = false;
+    let stopTime;
+    let strokeWidth;
 
-function setup() {
-    frameRate(60);
-    let cnv = createCanvas(windowWidth, windowHeight);
-    cnv.parent('canvas-container');
-    cnv.elt.style.pointerEvents = "none";  // this line disables mouse events for the canvas
-    background(255);
-    initializeLineOnRandomEdge();
-    setDisplayProperties();
-    startTime = millis();
-    windowResized();
-}
-
-function draw() {
-    if (!stopDrawing || (millis() - startTime) < stopTime) {
-        let angle = noise(xoff) * TWO_PI * 4;
-        let len = 5;
-        let newX = x + cos(angle) * len;
-        let newY = y + sin(angle) * len;
-
-        stroke(0);
-        strokeWeight(strokeWidth);
-
-        line(prevX, prevY, newX, newY);
-
-        prevX = newX;
-        prevY = newY;
-
-        x = newX;
-        y = newY;
-
-        xoff += 0.01;
-        yoff += 0.01;
-    }
-
-    if (x > width || x < 0 || y > height || y < 0) {
+    p.setup = function() {
+        p.frameRate(60);
+        let cnv = p.createCanvas(p.windowWidth, p.windowHeight);
+        cnv.parent('canvas-container');
+        cnv.elt.style.pointerEvents = "none";
+        p.background(255);
         initializeLineOnRandomEdge();
+        setDisplayProperties();
+        startTime = p.millis();
+        p.windowResized();
+    };
 
-        if ((millis() - startTime) >= stopTime) {
-            stopDrawing = true;
+    p.draw = function() {
+        if (!stopDrawing || (p.millis() - startTime) < stopTime) {
+            let angle = p.noise(xoff) * p.TWO_PI * 4;
+            let len = 5;
+            let newX = x + p.cos(angle) * len;
+            let newY = y + p.sin(angle) * len;
+
+            p.stroke(0);
+            p.strokeWeight(strokeWidth);
+
+            p.line(prevX, prevY, newX, newY);
+
+            prevX = newX;
+            prevY = newY;
+
+            x = newX;
+            y = newY;
+
+            xoff += 0.01;
+            yoff += 0.01;
         }
+
+        if (x > p.width || x < 0 || y > p.height || y < 0) {
+            initializeLineOnRandomEdge();
+
+            if ((p.millis() - startTime) >= stopTime) {
+                stopDrawing = true;
+            }
+        }
+    };
+
+    function initializeLineOnRandomEdge() {
+        let edge = parseInt(p.random(4));
+
+        switch (edge) {
+            case 0:
+                x = p.random(p.width);
+                y = 0;
+                break;
+            case 1:
+                x = p.random(p.width);
+                y = p.height;
+                break;
+            case 2:
+                x = 0;
+                y = p.random(p.height);
+                break;
+            case 3:
+                x = p.width;
+                y = p.random(p.height);
+                break;
+        }
+
+        prevX = x;
+        prevY = y;
     }
-}
 
-function initializeLineOnRandomEdge() {
-    let edge = int(random(4));
+    function setDisplayProperties() {
+        let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-    switch (edge) {
-        case 0:
-            x = random(width);
-            y = 0;
-            break;
-        case 1:
-            x = random(width);
-            y = height;
-            break;
-        case 2:
-            x = 0;
-            y = random(height);
-            break;
-        case 3:
-            x = width;
-            y = random(height);
-            break;
-    }
-
-    prevX = x;
-    prevY = y;
-}
-
-function setDisplayProperties() {
-    let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-    if (isMobile) {
-        strokeWidth = 0.5;
-        if (width > height) {
-            stopTime = 5000;  // 5 seconds for landscape on mobile
+        if (isMobile) {
+            strokeWidth = 0.5;
+            if (p.width > p.height) {
+                stopTime = 5000;
+            } else {
+                stopTime = 4000;
+            }
         } else {
-            stopTime = 4000;  // 4 seconds for portrait on mobile
-        }
-    } else {
-        if (width > height) {
-            stopTime = 60000;  // 20 seconds for landscape on desktop
-            strokeWidth = 1;
-        } else {
-            stopTime = 5000;  // 10 seconds for portrait on desktop
-            strokeWidth = 1;
+            if (p.width > p.height) {
+                stopTime = 60000;
+                strokeWidth = 1;
+            } else {
+                stopTime = 5000;
+                strokeWidth = 1;
+            }
         }
     }
-}
 
-function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
-    setDisplayProperties();  // adjust properties based on new aspect ratio after resize
-}
+    p.windowResized = function() {
+        p.resizeCanvas(p.windowWidth, p.windowHeight);
+        setDisplayProperties();
+    };
+};
+
+let myp5 = new p5(sketch);
 
 // Function to hide the menu
 function hideMenu() {
@@ -153,7 +157,7 @@ function updateSquareHeight() {
     // Calculate the percentage of how much has been scrolled
     const scrollPercent = (scrollY / documentHeight) * 100;
 
-    let initialHeight, finalHeight, initialWidth, finalWidth, initialWidthGradient, initialHeightGradient, finalWidthGradient, finalHeightGradient;
+    let initialHeight, finalHeight, initialWidth, finalWidth,initialLeftOfGold,finalLeftOfGold;
 
     // Check if it's in portrait mode
     if (window.innerHeight > window.innerWidth) {
@@ -161,9 +165,9 @@ function updateSquareHeight() {
     } else {
         // Values for landscape mode
         initialHeight = 41;
-        finalHeight = 61;
+        finalHeight = 48;
         initialWidth = 24;
-        finalWidth = 24;
+        finalWidth = 28;
     }
 
     // Calculate the new height based on scroll percent

@@ -28,6 +28,7 @@
     line-height: 11vh;
     letter-spacing: -3vh;
 }
+
 body,
 html {
     margin: 0;
@@ -42,6 +43,9 @@ html {
     transform-style: flat;
 }
 
+#penrose-container{
+    position: static;
+}
 address{
     font-style: normal;
 }
@@ -284,10 +288,11 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 33vh;
 }
 
 .descriptions > p {
-    margin-top: 100vh;
+    margin-top: 50vh;
     padding-top: 3vh;
 }
 
@@ -369,11 +374,6 @@ footer {
         z-index: 1;
         padding: 10vh 5vw;
         background-color: #ffffff;
-        border-radius: 55px;
-        border-color: black;
-        border-style: dotted;
-        border-block-end-style: hidden;
-        border-block-start-style: hidden;
     }
     .square {
         width: 27vw;
