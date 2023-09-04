@@ -18,7 +18,16 @@
     position: fixed;
     z-index: 0;
 }
-
+.logo{
+    font-size: 10em;
+    padding: 55vh 4vw;
+    z-index: 12;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    line-height: 101px;
+    letter-spacing: -29px;
+}
 body,
 html {
     margin: 0;
@@ -359,6 +368,10 @@ footer {
         padding: 10vh 5vw;
         background-color: #ffffff;
         border-radius: 55px;
+        border-color: black;
+        border-style: dotted;
+        border-block-end-style: hidden;
+        border-block-start-style: hidden;
     }
     .square {
         width: 27vw;
