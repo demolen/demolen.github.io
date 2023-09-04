@@ -25,7 +25,7 @@
 }
 .logo{
     font-size: 17vh;
-    padding: 52vh 4vw;
+    padding: 39vh 4vw;
     z-index: 1;
     position: absolute;
     display: flex;
@@ -414,17 +414,16 @@ footer {
 @media (orientation: portrait) {
     .square3 {
         width: 24%;
-        height: 11%;
-        top: 15%;
-        left: -4.71%;
-        transform: rotate(151deg);
+        height: 21%;
+        top: 7%;
+        left: 3.29%;
+        transform: rotate(10deg);
         margin-left: 56vw;
-        clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
-        box-shadow: 10vw 10vw gold;
+        box-shadow: -10vw 10vw gold;
     }
     .logo {
         font-size: 6em;
-        padding: 53vh 4vw;
+        padding: 47vh 4vw;
         z-index: 1;
         position: absolute;
         display: flex;
@@ -434,12 +433,12 @@ footer {
     }
 
     .square {
-        width: 24vw;
-        height: 11vh;
-        top: 17vh;
-        left: 57.29%;
+        width: 27vw;
+        height: 19vh;
+        top: 25vh;
+        left: 55.29%;
         transform-style: flat;
-        transform: rotate(-370deg);
+        transform: rotate(-318deg);
     }
 
     #rect {
@@ -449,11 +448,11 @@ footer {
         visibility: hidden;
     }
     .square2 {
-        width: 23%;
-        height: 11%;
-        top: 20%;
-        left: 6.29%;
-        transform: rotate(463deg);
+        width: 24%;
+        height: 17%;
+        top: 22%;
+        left: 10%;
+        transform: rotate(100deg);
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
     }
