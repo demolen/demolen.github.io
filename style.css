@@ -288,9 +288,8 @@ a {
     margin-bottom: 20vh;
 }
 .grid-item {
-    background-color: #ffffffee; /* Add background color if needed */
+    background-color: #ffffff; /* Add background color if needed */
     padding: 2vw; /* Add padding */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Optional shadow */
     border-radius: 4px;
 }
 
