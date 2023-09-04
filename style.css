@@ -19,14 +19,14 @@
     z-index: 0;
 }
 .logo{
-    font-size: 10em;
-    padding: 55vh 4vw;
-    z-index: 12;
+    font-size: 17vh;
+    padding: 52vh 4vw;
+    z-index: 1;
     position: absolute;
     display: flex;
     align-self: center;
-    line-height: 101px;
-    letter-spacing: -29px;
+    line-height: 11vh;
+    letter-spacing: -3vh;
 }
 body,
 html {
@@ -418,6 +418,17 @@ footer {
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
         box-shadow: 10vw 10vw gold;
     }
+    .logo {
+        font-size: 6em;
+        padding: 58vh 4vw;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        align-self: center;
+        line-height: 65px;
+        letter-spacing: -17px;
+    }
+
     .square {
         width: 22vw;
         height: 41vh;
