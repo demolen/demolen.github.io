@@ -17,6 +17,7 @@
 #canvas-container {
     position: fixed;
     z-index: 0;
+    width: 100%;
 }
 .descriptions h2 {
     margin: 0;  /* Removes any default margin */
@@ -413,10 +414,10 @@ footer {
 @media (orientation: portrait) {
     .square3 {
         width: 24%;
-        height: 41%;
-        top: 25%;
-        left: 3.29%;
-        transform: rotate(211deg);
+        height: 11%;
+        top: 15%;
+        left: -4.71%;
+        transform: rotate(151deg);
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
         box-shadow: 10vw 10vw gold;
@@ -433,13 +434,14 @@ footer {
     }
 
     .square {
-        width: 22vw;
-        height: 41vh;
-        top: 34vh;
-        left: 59.29%;
+        width: 24vw;
+        height: 11vh;
+        top: 17vh;
+        left: 57.29%;
         transform-style: flat;
-        transform: rotate(-322deg);
+        transform: rotate(-370deg);
     }
+
     #rect {
         width: 0;
         height: 0;
@@ -447,11 +449,11 @@ footer {
         visibility: hidden;
     }
     .square2 {
-        width: 24%;
-        height: 41%;
-        top: 6%;
-        left: 2.29%;
-        transform: rotate(379deg);
+        width: 23%;
+        height: 11%;
+        top: 20%;
+        left: 6.29%;
+        transform: rotate(463deg);
         margin-left: 56vw;
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
     }
@@ -465,7 +467,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        padding: 1vh 10vw;
+        padding: 1vh 5vw;
         margin-top: 87vh;
         margin-bottom: 38vh;
     }
