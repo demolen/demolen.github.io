@@ -7,6 +7,7 @@ let sketch = function(p) {
     let stopDrawing = false;
     let stopTime;
     let strokeWidth;
+    let strokeColor;
 
     p.setup = function() {
         p.frameRate(60);
@@ -21,13 +22,24 @@ let sketch = function(p) {
     };
 
     p.draw = function() {
+        // Check if it's darktime
+        const now = new Date();
+        const hour = now.getHours();
+        if (hour >= 18 || hour < 6) {
+            // Darktime
+            strokeColor = 255;  // white
+        } else {
+            // Daytime
+            strokeColor = 0;  // black
+        }
+
         if (!stopDrawing || (p.millis() - startTime) < stopTime) {
             let angle = p.noise(xoff) * p.TWO_PI * 4;
             let len = 5;
             let newX = x + p.cos(angle) * len;
             let newY = y + p.sin(angle) * len;
 
-            p.stroke(0);
+            p.stroke(strokeColor);
             p.strokeWeight(strokeWidth);
 
             p.line(prevX, prevY, newX, newY);
@@ -106,85 +118,34 @@ let sketch = function(p) {
 
 let myp5 = new p5(sketch);
 
-// Function to hide the menu
-function hideMenu() {
-    document.getElementById("toggle").checked = false;
-}
+// Rest of your JavaScript code and the setDarktimeColors function
 
-// Function to check if a point is inside a circle
-function isPointInCircle(x, y, circleCenterX, circleCenterY, radius) {
-    const dx = x - circleCenterX;
-    const dy = y - circleCenterY;
-    return dx * dx + dy * dy <= radius * radius;
-}
-
-// Function to handle document clicks
-function handleDocumentClick(event) {
-    const menuContainer = document.querySelector('.menu-container');
-    const toggleButton = document.querySelector('.button-toggle');
-    const toggleRect = toggleButton.getBoundingClientRect();
-
-    // Calculate the center and effective radius of the circle
-    const circleCenterX = toggleRect.left + toggleRect.width / 2;
-    const circleCenterY = toggleRect.top + toggleRect.height / 2;
-    const radius = 550;  // This should match the maximum radius in your CSS
-
-    if (!menuContainer.contains(event.target) &&
-        !isPointInCircle(event.clientX, event.clientY, circleCenterX, circleCenterY, radius)) {
-        hideMenu();
-    }
-}
-
-// Attach event listeners to nav items
-document.addEventListener("DOMContentLoaded", function() {
-    const navItems = document.querySelectorAll('.nav-item');
-    navItems.forEach(item => {
-        item.addEventListener('click', hideMenu);
-    });
-
-    // Attach event listener to document to handle clicks outside menu
-    document.addEventListener('click', handleDocumentClick);
-});
 function setDarktimeColors() {
-    // Get the current date and time
     const now = new Date();
     const hour = now.getHours();
-
-    // Define the CSS variable values for darktime and daytime
     const darktimeColors = {
         '--main-color': '#1a1a1a',
         '--main-color-rgb': '26, 26, 26',
         '--secondary-color': '#e3e3e3',
         '--secondary-color-rgb': '227, 227, 227'
     };
-
     const daytimeColors = {
         '--main-color': '#e3e3e3',
         '--main-color-rgb': '227, 227, 227',
         '--secondary-color': '#1a1a1a',
         '--secondary-color-rgb': '26, 26, 26'
     };
-
-    // Get the :root element
     const root = document.documentElement;
-
-    // Check if it's darktime or daytime and set the appropriate CSS variables
     if (hour >= 18 || hour < 6) {
-        // It's darktime
         for (const [key, value] of Object.entries(darktimeColors)) {
             root.style.setProperty(key, value);
         }
     } else {
-        // It's daytime
         for (const [key, value] of Object.entries(daytimeColors)) {
             root.style.setProperty(key, value);
         }
     }
 }
 
-// Run the function when the page loads
 setDarktimeColors();
-
-// Optionally, you could also run this function at an interval to keep it updated
 setInterval(setDarktimeColors, 1000 * 60);  // Update every minute
-
