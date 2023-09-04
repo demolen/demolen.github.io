@@ -258,7 +258,7 @@ a {
 .language-selector {
     position: absolute;
     z-index: 9999999;
-    padding: 2vh 5vw;
+    margin: 2vh 5vw;
     flex-grow: 0;
     top: 2vh;
     right: 0;
@@ -289,7 +289,7 @@ a {
 }
 .grid-item {
     background-color: #ffffffee; /* Add background color if needed */
-    padding: 20px; /* Add padding */
+    padding: 2vw; /* Add padding */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Optional shadow */
     border-radius: 4px;
 }
@@ -347,7 +347,7 @@ footer {
 }
 
 .footerElements {
-    padding: 0 0 1vh 5vw;
+    margin: 0 0 1vh 5vw;
 }
 .footerElements a {
     color:black;
