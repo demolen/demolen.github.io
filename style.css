@@ -466,7 +466,7 @@ footer {
         clip-path: polygon(-117px -104px, 91.03% -53.4%, 139.33% 129.06%, -108.04% 144.99%);
     }
     .descriptions {
-        color: #161615;
+        color: var(--secondary-color);
         font-size: .4em;
         text-align: justify;
         position: relative;
