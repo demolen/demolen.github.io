@@ -145,4 +145,46 @@ document.addEventListener("DOMContentLoaded", function() {
     // Attach event listener to document to handle clicks outside menu
     document.addEventListener('click', handleDocumentClick);
 });
+function setDarktimeColors() {
+    // Get the current date and time
+    const now = new Date();
+    const hour = now.getHours();
+
+    // Define the CSS variable values for darktime and daytime
+    const darktimeColors = {
+        '--main-color': 'black',
+        '--main-color-rgb': '0, 0, 0',
+        '--secondary-color': '#e3e3e3',
+        '--secondary-color-rgb': '227, 227, 227'
+    };
+
+    const daytimeColors = {
+        '--main-color': '#e3e3e3',
+        '--main-color-rgb': '227, 227, 227',
+        '--secondary-color': 'black',
+        '--secondary-color-rgb': '0, 0, 0'
+    };
+
+    // Get the :root element
+    const root = document.documentElement;
+
+    // Check if it's darktime or daytime and set the appropriate CSS variables
+    if (hour >= 18 || hour < 6) {
+        // It's darktime
+        for (const [key, value] of Object.entries(darktimeColors)) {
+            root.style.setProperty(key, value);
+        }
+    } else {
+        // It's daytime
+        for (const [key, value] of Object.entries(daytimeColors)) {
+            root.style.setProperty(key, value);
+        }
+    }
+}
+
+// Run the function when the page loads
+setDarktimeColors();
+
+// Optionally, you could also run this function at an interval to keep it updated
+setInterval(setDarktimeColors, 1000 * 60);  // Update every minute
 
