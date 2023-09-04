@@ -22,14 +22,11 @@ let sketch = function(p) {
     };
 
     p.draw = function() {
-        // Check if it's darktime
         const now = new Date();
         const hour = now.getHours();
         if (hour >= 18 || hour < 6) {
-            // Darktime
             strokeColor = 255;  // white
         } else {
-            // Daytime
             strokeColor = 0;  // black
         }
 
@@ -56,7 +53,6 @@ let sketch = function(p) {
 
         if (x > p.width || x < 0 || y > p.height || y < 0) {
             initializeLineOnRandomEdge();
-
             if ((p.millis() - startTime) >= stopTime) {
                 stopDrawing = true;
             }
@@ -65,7 +61,6 @@ let sketch = function(p) {
 
     function initializeLineOnRandomEdge() {
         let edge = parseInt(p.random(4));
-
         switch (edge) {
             case 0:
                 x = p.random(p.width);
@@ -84,14 +79,12 @@ let sketch = function(p) {
                 y = p.random(p.height);
                 break;
         }
-
         prevX = x;
         prevY = y;
     }
 
     function setDisplayProperties() {
         let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
         if (isMobile) {
             strokeWidth = 0.5;
             if (p.width > p.height) {
@@ -118,8 +111,43 @@ let sketch = function(p) {
 
 let myp5 = new p5(sketch);
 
-// Rest of your JavaScript code and the setDarktimeColors function
+// Function to hide the menu
+function hideMenu() {
+    document.getElementById("toggle").checked = false;
+}
 
+// Function to check if a point is inside a circle
+function isPointInCircle(x, y, circleCenterX, circleCenterY, radius) {
+    const dx = x - circleCenterX;
+    const dy = y - circleCenterY;
+    return dx * dx + dy * dy <= radius * radius;
+}
+
+// Function to handle document clicks
+function handleDocumentClick(event) {
+    const menuContainer = document.querySelector('.menu-container');
+    const toggleButton = document.querySelector('.button-toggle');
+    const toggleRect = toggleButton.getBoundingClientRect();
+    const circleCenterX = toggleRect.left + toggleRect.width / 2;
+    const circleCenterY = toggleRect.top + toggleRect.height / 2;
+    const radius = 550;
+
+    if (!menuContainer.contains(event.target) &&
+        !isPointInCircle(event.clientX, event.clientY, circleCenterX, circleCenterY, radius)) {
+        hideMenu();
+    }
+}
+
+// Attach event listeners to nav items
+document.addEventListener("DOMContentLoaded", function() {
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        item.addEventListener('click', hideMenu);
+    });
+    document.addEventListener('click', handleDocumentClick);
+});
+
+// Darktime colors function
 function setDarktimeColors() {
     const now = new Date();
     const hour = now.getHours();
