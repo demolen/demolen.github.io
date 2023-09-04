@@ -152,8 +152,8 @@ function setDarktimeColors() {
 
     // Define the CSS variable values for darktime and daytime
     const darktimeColors = {
-        '--main-color': 'black',
-        '--main-color-rgb': '0, 0, 0',
+        '--main-color': '#1a1a1a',
+        '--main-color-rgb': '26, 26, 26',
         '--secondary-color': '#e3e3e3',
         '--secondary-color-rgb': '227, 227, 227'
     };
@@ -161,8 +161,8 @@ function setDarktimeColors() {
     const daytimeColors = {
         '--main-color': '#e3e3e3',
         '--main-color-rgb': '227, 227, 227',
-        '--secondary-color': 'black',
-        '--secondary-color-rgb': '0, 0, 0'
+        '--secondary-color': '#1a1a1a',
+        '--secondary-color-rgb': '26, 26, 26'
     };
 
     // Get the :root element

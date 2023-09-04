@@ -11,8 +11,8 @@
 :root {
     --main-color: #e3e3e3;
     --main-color-rgb: 227, 227, 227;
-    --secondary-color: black;
-    --secondary-color-rgb: 0, 0, 0;
+    --secondary-color: #1a1a1a;
+    --secondary-color-rgb: 26, 26, 26;
 }
 
 .menu-container{
