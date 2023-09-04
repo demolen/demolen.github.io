@@ -125,7 +125,7 @@ function isPointInCircle(x, y, circleCenterX, circleCenterY, radius) {
 
 // Function to handle document clicks
 function handleDocumentClick(event) {
-    const menuContainer = document.querySelector('.menu-container');
+    const menuContainer = document.querySelector('.nav');
     const toggleButton = document.querySelector('.button-toggle');
     const toggleRect = toggleButton.getBoundingClientRect();
     const circleCenterX = toggleRect.left + toggleRect.width / 2;
