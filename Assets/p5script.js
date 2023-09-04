@@ -157,10 +157,7 @@ function updateSquareHeight() {
 
     // Check if it's in portrait mode
     if (window.innerHeight > window.innerWidth) {
-        initialHeight = 41;
-        finalHeight = 35;
-        initialWidth = 24;
-        finalWidth = 45;
+
     } else {
         // Values for landscape mode
         initialHeight = 41;
