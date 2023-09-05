@@ -92,16 +92,16 @@ let sketch = function(p) {
         if (isMobileDevice()) {
             strokeWidth = 0.5;
             if (p.width > p.height) {
-                stopTime = 5000;
+                stopTime = 7000;
             } else {
-                stopTime = 4000;
+                stopTime = 6000;
             }
         } else {
             if (p.width > p.height) {
-                stopTime = 60000;
+                stopTime = 20000;
                 strokeWidth = 1;
             } else {
-                stopTime = 5000;
+                stopTime = 10000;
                 strokeWidth = 1;
             }
         }
