@@ -8,6 +8,11 @@ let sketch = function(p) {
     let stopTime;
     let strokeWidth;
     let strokeColor;
+    let initialized = false;
+
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
 
     p.setup = function() {
         p.frameRate(60);
@@ -84,8 +89,7 @@ let sketch = function(p) {
     }
 
     function setDisplayProperties() {
-        let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        if (isMobile) {
+        if (isMobileDevice()) {
             strokeWidth = 0.5;
             if (p.width > p.height) {
                 stopTime = 5000;
@@ -104,12 +108,23 @@ let sketch = function(p) {
     }
 
     p.windowResized = function() {
-        p.resizeCanvas(p.windowWidth, p.windowHeight);
-        setDisplayProperties();
+        // If the canvas has not been initialized, initialize it
+        if (!initialized) {
+            p.resizeCanvas(p.windowWidth, p.windowHeight);
+            setDisplayProperties();
+            initialized = true;
+        }
+
+        // If the device is not mobile, allow resizing
+        if (!isMobileDevice()) {
+            p.resizeCanvas(p.windowWidth, p.windowHeight);
+            setDisplayProperties();
+        }
     };
 };
 
 let myp5 = new p5(sketch);
+
 
 // Function to hide the menu
 function hideMenu() {
