@@ -2,7 +2,7 @@ let xMargin = 30; // Margin space left and right
 let buWImg;
 function preload() {
     buWImg = loadImage('Assets/BUW_Logo.jpg');
-    studyBuddyImg = loadImage('Assets/studyBuddy_Logo.png');
+    studyBuddyImg = loadImage('Assets/StudyBuddy_Logo.png');
 }
 function setup() {
     let logoPng = loadImage('BUW_Logo.jpg');
