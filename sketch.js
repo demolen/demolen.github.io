@@ -1,12 +1,10 @@
 let xMargin = 30; // Margin space left and right
 let buWImg;
 function preload() {
-    buWImg = loadImage('Assets/BUW_Logo.jpg');
+    buWImg = loadImage('Assets/BUW_Logo.png');
     studyBuddyImg = loadImage('Assets/StudyBuddy_Logo.png');
 }
 function setup() {
-    let logoPng = loadImage('BUW_Logo.jpg');
-    frameRate(30);
     let width = 638;
     let height = 900;
     createCanvas(width, height);
