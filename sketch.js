@@ -9,7 +9,7 @@ function setup() {
     let height = 900;
     createCanvas(width, height);
 
-    background('lightGrey');
+    background('#E5E4E2');
 
     textSize(32);
     textAlign(LEFT);
@@ -31,7 +31,7 @@ function draw() {
 
         noStroke();
         if (j % 2 === 0) {
-            stroke('lightGrey');
+            stroke('#E5E4E2');
             strokeWeight(2);
             fill('#453953');
             rect(currentPosition, currentPosition, randomSize*j, randomSize+j*20, 20);
