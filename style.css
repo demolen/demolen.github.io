@@ -8,6 +8,13 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: 'Borgen Regular';
+    src: url('https://fonts.cdnfonts.com/s/76200/Borgen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --main-color: #e3e3e3;
     --main-color-rgb: 227, 227, 227;
@@ -31,6 +38,7 @@
     padding-bottom: 1vh;  /* Adds a small padding at the bottom, optional */
 }
 .logo{
+    font-family: 'Borgen Regular', sans-serif;
     color: var(--secondary-color);
     font-size: 17vh;
     padding: 39vh 4vw;
@@ -38,8 +46,8 @@
     position: absolute;
     display: flex;
     align-self: center;
-    line-height: 11vh;
-    letter-spacing: -3vh;
+    line-height: 12vh;
+    letter-spacing: -1vh;
 }
 
 body,
@@ -158,15 +166,15 @@ a {
 .button-toggle {
     position: absolute;
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    margin: 23px 21px 21px;
+    width: 30px;
+    height: 30px;
+    margin: 20px 18px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     border-radius: 100%;
     transition: 0.6s;
-    box-shadow: 0 0 0 3px rgb(var(--secondary-color-rgb)), inset 0 0 0 20px rgb(var(--main-color-rgb));
+    box-shadow: 0 0 0 1px rgb(var(--secondary-color-rgb)), inset 0 0 0 20px rgb(var(--main-color-rgb));
 
 }
 .button-toggle:hover {
