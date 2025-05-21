@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.milad.studio/sitemap.xml
+Sitemap: https://demolen.github.io/sitemap.xml
